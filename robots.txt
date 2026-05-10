@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Permitir explicitamente bots de IA / AEO (ChatGPT, Perplexity, Google AI Overview, etc.)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Bloquear áreas sensíveis (caso existam no futuro)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+Sitemap: https://www.goldcarmecanica.com.br/sitemap.xml

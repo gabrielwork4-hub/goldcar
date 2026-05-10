@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/</loc>
+        <lastmod>2026-05-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://www.goldcarmecanica.com.br/assets/logo.png</image:loc>
+            <image:title>Logo Gold Car Mecânica, Auto Elétrica e Turbina</image:title>
+            <image:caption>Logotipo oficial da Gold Car</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.goldcarmecanica.com.br/fotos/IMG_3845.webp</image:loc>
+            <image:title>Oficina Gold Car Mecânica - Vila Lageado, São Paulo</image:title>
+            <image:caption>Fachada da Gold Car Mecânica em São Paulo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.goldcarmecanica.com.br/fotos/IMG_3849.webp</image:loc>
+            <image:title>Diagnóstico computadorizado Gold Car</image:title>
+            <image:caption>Diagnóstico digital com scanner profissional</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.goldcarmecanica.com.br/fotos/IMG_3785.webp</image:loc>
+            <image:title>Equipe de mecânicos especialistas Gold Car</image:title>
+        </image:image>
+    </url>
+
+</urlset>

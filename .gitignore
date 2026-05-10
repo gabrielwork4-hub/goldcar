@@ -1,0 +1,22 @@
+# Pastas e arquivos de desenvolvimento — não vão para produção
+.agents/
+skills-lock.json
+update_services.py
+PROJETO.md
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs e temporários
+*.log
+*.tmp
+node_modules/
