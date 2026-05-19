@@ -1,0 +1,42 @@
+# Arquivos que NÃO devem ser servidos publicamente pelo Cloudflare
+# (sintaxe igual .gitignore)
+
+# Git metadata
+.git/
+.gitignore
+.gitattributes
+
+# Wrangler / Cloudflare internals
+.wrangler/
+wrangler.jsonc
+wrangler.toml
+.assetsignore
+
+# Pastas de desenvolvimento
+.claude/
+.agents/
+.vscode/
+.idea/
+
+# Documentação/instruções (não-públicas)
+README.md
+CLAUDE.md
+PROJETO.md
+skills-lock.json
+
+# Scripts de dev/build (não usados em produção estática)
+server.js
+iniciar-servidor.bat
+update_services.py
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores e logs
+*.swp
+*.swo
+*.log
+*.tmp
+node_modules/
