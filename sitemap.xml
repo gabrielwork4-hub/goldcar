@@ -4,7 +4,7 @@
 
     <url>
         <loc>https://www.goldcarmecanica.com.br/</loc>
-        <lastmod>2026-05-09</lastmod>
+        <lastmod>2026-05-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
@@ -26,6 +26,125 @@
             <image:loc>https://www.goldcarmecanica.com.br/fotos/IMG_3785.webp</image:loc>
             <image:title>Equipe de mecânicos especialistas Gold Car</image:title>
         </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/pastilha-de-freio.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/sistema-de-freios.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/embreagem-carro.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/revisao-do-carro.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/alinhamento-balanceamento.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/correia-dentada.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/diagnostico-automotivo.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/manutencao-preventiva.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/troca-de-oleo.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/suspensao-do-carro.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/bateria-do-carro.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/oficina-mecanica-vila-lageado.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/injecao-eletronica.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/motor-superaquecendo.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/mecanica-butanta.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.goldcarmecanica.com.br/blog/velas-de-ignicao.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
 </urlset>

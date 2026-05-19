@@ -53,9 +53,7 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap"></noscript>
-    <!-- GSAP -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- GSAP - carregado dinamicamente após window.load para reduzir TBT -->
     
     <style>
         :root {
@@ -88,6 +86,15 @@
 
         section[id] {
             scroll-margin-top: 90px;
+        }
+
+        /* Performance: pula render de seções fora da viewport */
+        #depoimentos,
+        #faq,
+        #transparencia,
+        #contato {
+            content-visibility: auto;
+            contain-intrinsic-size: 1px 800px;
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -2193,6 +2200,7 @@
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#depoimentos">Depoimentos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="/blog/">Blog</a></li>
             </ul>
 
             <div style="display: flex; align-items: center; gap: 12px;">
@@ -2908,7 +2916,7 @@
         <div class="footer-grid">
             <div class="footer-col footer-brand">
                 <div class="footer-logo">
-                    <img src="assets/logo.png" alt="Gold Car Mecânica, Auto Elétrica e Turbina" width="180" height="90">
+                    <img src="assets/logo.png" alt="Gold Car Mecânica, Auto Elétrica e Turbina" width="180" height="90" loading="lazy" decoding="async">
                 </div>
                 <p>Mecânica especializada na região da Av. Corifeu de Azevedo Marques. Tecnologia, transparência e atendimento de quem realmente entende do seu carro.</p>
             </div>
@@ -2921,6 +2929,7 @@
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contato">Contato</a></li>
+                    <li><a href="/blog/">Blog</a></li>
                 </ul>
             </div>
 
@@ -2999,10 +3008,7 @@
                 });
             }
 
-            // GSAP ScrollTrigger init
-            gsap.registerPlugin(ScrollTrigger);
-
-            // Hero Particles (Canvas)
+            // Hero Particles (Canvas) — roda imediatamente, não depende de GSAP
             const canvas = document.getElementById('hero-canvas');
             const ctx = canvas.getContext('2d');
             let particles = [];
@@ -3057,6 +3063,39 @@
 
             initParticles();
             animateParticles();
+
+            // ========================================
+            // GSAP — carregado depois do window.load para reduzir TBT
+            // ========================================
+            function loadGSAPLibs() {
+                const gsapScript = document.createElement('script');
+                gsapScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js';
+                gsapScript.async = true;
+                gsapScript.onload = () => {
+                    const stScript = document.createElement('script');
+                    stScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js';
+                    stScript.async = true;
+                    stScript.onload = () => {
+                        if ('requestIdleCallback' in window) {
+                            requestIdleCallback(initGSAPAnimations, { timeout: 2000 });
+                        } else {
+                            setTimeout(initGSAPAnimations, 1);
+                        }
+                    };
+                    document.head.appendChild(stScript);
+                };
+                document.head.appendChild(gsapScript);
+            }
+
+            if (document.readyState === 'complete') {
+                loadGSAPLibs();
+            } else {
+                window.addEventListener('load', loadGSAPLibs, { once: true });
+            }
+
+            function initGSAPAnimations() {
+                if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+                gsap.registerPlugin(ScrollTrigger);
 
             // GSAP Animations
             // Hero
@@ -3235,6 +3274,7 @@
                 stagger: 0.1,
                 ease: "power1.inOut"
             });
+            }
         });
     </script>
 </body>

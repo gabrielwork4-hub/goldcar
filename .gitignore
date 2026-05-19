@@ -1,8 +1,14 @@
 # Pastas e arquivos de desenvolvimento — não vão para produção
 .agents/
+.claude/
+CLAUDE.md
 skills-lock.json
 update_services.py
 PROJETO.md
+
+# Servidor local de dev (produção roda no Cloudflare Pages, não precisa Node)
+server.js
+iniciar-servidor.bat
 
 # Sistema operacional
 .DS_Store
