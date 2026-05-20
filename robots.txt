@@ -28,4 +28,4 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://www.goldcarmecanica.com.br/sitemap.xml
+Sitemap: https://www.goldcaroficina.com.br/sitemap.xml
