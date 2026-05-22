@@ -1927,6 +1927,26 @@
             color: var(--gold);
             margin-left: 2px;
         }
+        .contato-field label .opt {
+            color: var(--gray);
+            font-weight: 400;
+            font-size: 0.7rem;
+            text-transform: none;
+            letter-spacing: 0;
+            margin-left: 4px;
+        }
+        .contato-field input.invalid,
+        .contato-field textarea.invalid {
+            border-color: #ff6b6b;
+            box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.15);
+        }
+        .contato-field .field-error {
+            color: #ff8e8e;
+            font-size: 0.8rem;
+            margin-top: 6px;
+            min-height: 18px;
+            display: block;
+        }
         .contato-field input,
         .contato-field textarea {
             width: 100%;
@@ -2885,12 +2905,16 @@
                         <input type="tel" id="contato-telefone" name="telefone" placeholder="(11) 9XXXX-XXXX" required autocomplete="tel">
                     </div>
                     <div class="contato-field">
-                        <label for="contato-veiculo">Veículo</label>
-                        <input type="text" id="contato-veiculo" name="veiculo" placeholder="Marca, modelo e ano" autocomplete="off">
+                        <label for="contato-veiculo">Veículo <span class="req">*</span></label>
+                        <input type="text" id="contato-veiculo" name="veiculo" placeholder="Marca, modelo e ano" required autocomplete="off" minlength="3">
+                    </div>
+                    <div class="contato-field">
+                        <label for="contato-placa">Placa <span class="opt">(opcional)</span></label>
+                        <input type="text" id="contato-placa" name="placa" placeholder="ABC-1234 ou ABC1D23" autocomplete="off" maxlength="8" pattern="^[A-Z]{3}-?[0-9][A-Z0-9][0-9]{2}$">
                     </div>
                     <div class="contato-field full">
                         <label for="contato-mensagem">Mensagem <span class="req">*</span></label>
-                        <textarea id="contato-mensagem" name="mensagem" placeholder="Descreva seu problema ou dúvida..." required></textarea>
+                        <textarea id="contato-mensagem" name="mensagem" placeholder="Descreva seu problema ou dúvida..." required minlength="10"></textarea>
                     </div>
                 </div>
 
@@ -3205,6 +3229,113 @@
             if (contatoForm) {
                 const statusEl = document.getElementById('contato-status');
                 const submitBtn = document.getElementById('contato-submit');
+                const telInput = document.getElementById('contato-telefone');
+                const emailInput = document.getElementById('contato-email');
+                const placaInput = document.getElementById('contato-placa');
+
+                // === MÁSCARA: Telefone (11) 99999-9999 ===
+                telInput.addEventListener('input', (e) => {
+                    let v = e.target.value.replace(/\D/g, '').slice(0, 11);
+                    if (v.length > 10) {
+                        v = v.replace(/^(\d{2})(\d{5})(\d{0,4}).*/, '($1) $2-$3');
+                    } else if (v.length > 6) {
+                        v = v.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
+                    } else if (v.length > 2) {
+                        v = v.replace(/^(\d{2})(\d{0,5}).*/, '($1) $2');
+                    } else if (v.length > 0) {
+                        v = v.replace(/^(\d{0,2}).*/, '($1');
+                    }
+                    e.target.value = v;
+                    clearError(telInput);
+                });
+
+                // === MÁSCARA: Placa (ABC-1234 ou ABC1D23) ===
+                placaInput.addEventListener('input', (e) => {
+                    let v = e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 7);
+                    // Detecta formato: se o 5º char for letra → Mercosul (ABC1D23), senão antigo (ABC-1234)
+                    if (v.length > 3) {
+                        const isMercosul = v.length >= 5 && /[A-Z]/.test(v[4]);
+                        if (!isMercosul && v.length > 3) {
+                            v = v.slice(0, 3) + '-' + v.slice(3);
+                        }
+                    }
+                    e.target.value = v;
+                    clearError(placaInput);
+                });
+
+                // === VALIDAÇÃO ao digitar (limpa erros) ===
+                ['contato-nome', 'contato-email', 'contato-veiculo', 'contato-mensagem'].forEach(id => {
+                    document.getElementById(id).addEventListener('input', (e) => clearError(e.target));
+                });
+
+                function showError(input, msg) {
+                    input.classList.add('invalid');
+                    let err = input.parentElement.querySelector('.field-error');
+                    if (!err) {
+                        err = document.createElement('span');
+                        err.className = 'field-error';
+                        input.parentElement.appendChild(err);
+                    }
+                    err.textContent = msg;
+                }
+
+                function clearError(input) {
+                    input.classList.remove('invalid');
+                    const err = input.parentElement.querySelector('.field-error');
+                    if (err) err.textContent = '';
+                }
+
+                function validateForm() {
+                    let valid = true;
+                    // Nome
+                    const nome = document.getElementById('contato-nome');
+                    if (nome.value.trim().length < 2) {
+                        showError(nome, 'Informe seu nome completo.');
+                        valid = false;
+                    }
+                    // E-mail
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+                    if (!emailRegex.test(emailInput.value.trim())) {
+                        showError(emailInput, 'E-mail inválido. Ex: nome@dominio.com');
+                        valid = false;
+                    }
+                    // Telefone (10 ou 11 dígitos)
+                    const telDigits = telInput.value.replace(/\D/g, '');
+                    if (telDigits.length < 10 || telDigits.length > 11) {
+                        showError(telInput, 'Telefone incompleto. Ex: (11) 99999-9999');
+                        valid = false;
+                    }
+                    // Veículo
+                    const veiculo = document.getElementById('contato-veiculo');
+                    if (veiculo.value.trim().length < 3) {
+                        showError(veiculo, 'Informe marca, modelo e ano.');
+                        valid = false;
+                    }
+                    // Placa (opcional, mas se preenchida valida)
+                    const placaVal = placaInput.value.trim();
+                    if (placaVal.length > 0) {
+                        const placaRegex = /^[A-Z]{3}-?[0-9][A-Z0-9][0-9]{2}$/;
+                        if (!placaRegex.test(placaVal)) {
+                            showError(placaInput, 'Placa inválida. Ex: ABC-1234 ou ABC1D23');
+                            valid = false;
+                        }
+                    }
+                    // Mensagem
+                    const msg = document.getElementById('contato-mensagem');
+                    if (msg.value.trim().length < 10) {
+                        showError(msg, 'Descreva com pelo menos 10 caracteres.');
+                        valid = false;
+                    }
+                    // Consentimento
+                    const consent = document.getElementById('contato-consent');
+                    if (!consent.checked) {
+                        statusEl.classList.add('error');
+                        statusEl.textContent = 'É preciso aceitar a Política de Privacidade.';
+                        valid = false;
+                    }
+                    return valid;
+                }
+
                 contatoForm.addEventListener('submit', async (e) => {
                     e.preventDefault();
                     statusEl.className = 'contato-status';
@@ -3218,9 +3349,11 @@
                         return;
                     }
 
-                    if (!contatoForm.checkValidity()) {
-                        statusEl.classList.add('error');
-                        statusEl.textContent = 'Preencha os campos obrigatórios e aceite a política.';
+                    if (!validateForm()) {
+                        if (!statusEl.textContent) {
+                            statusEl.classList.add('error');
+                            statusEl.textContent = 'Corrija os campos destacados antes de enviar.';
+                        }
                         return;
                     }
 
