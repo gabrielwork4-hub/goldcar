@@ -3365,6 +3365,14 @@
                             statusEl.classList.add('error');
                             statusEl.textContent = 'Corrija os campos destacados antes de enviar.';
                         }
+                        // GTM dataLayer: erro de validação
+                        window.dataLayer = window.dataLayer || [];
+                        const camposInvalidos = Array.from(contatoForm.querySelectorAll('.invalid')).map(el => el.name).join(',');
+                        window.dataLayer.push({
+                            event: 'form_field_error',
+                            form_name: 'contato',
+                            error_fields: camposInvalidos || 'consent'
+                        });
                         return;
                     }
 
@@ -3381,15 +3389,43 @@
                         statusEl.classList.add('success');
                         statusEl.textContent = 'Mensagem enviada! Entraremos em contato em breve.';
                         contatoForm.reset();
+
+                        // GTM dataLayer: envio com sucesso (conversão!)
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({
+                            event: 'form_submit_success',
+                            form_name: 'contato',
+                            form_location: 'site-goldcar'
+                        });
                     } catch (err) {
                         statusEl.classList.add('error');
                         statusEl.textContent = 'Não foi possível enviar agora. Tente novamente ou chame no WhatsApp.';
+                        // GTM dataLayer: erro no envio
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({
+                            event: 'form_submit_error',
+                            form_name: 'contato',
+                            error_message: err && err.message ? err.message : 'unknown'
+                        });
                     } finally {
                         submitBtn.disabled = false;
                         submitBtn.textContent = 'Enviar mensagem';
                     }
                 });
             }
+
+            // GTM dataLayer: cliques em qualquer link de WhatsApp
+            document.querySelectorAll('a[href*="wa.me/"]').forEach(link => {
+                link.addEventListener('click', () => {
+                    const label = link.getAttribute('aria-label') || link.textContent.trim() || 'whatsapp-link';
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        event: 'whatsapp_click',
+                        click_label: label.substring(0, 80),
+                        click_location: link.className || 'inline'
+                    });
+                });
+            });
 
             // Contato - Animação de entrada
             gsap.from("#contato .contato-header, #contato .contato-form", {
