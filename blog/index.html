@@ -28,7 +28,7 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Blog","name":"Blog Gold Car Mecânica","url":"https://www.goldcaroficina.com.br/blog/","description":"Dicas de manutenção automotiva, diagnóstico e cuidados com seu veículo","publisher":{"@type":"LocalBusiness","name":"Gold Car Mecânica","url":"https://www.goldcaroficina.com.br","telephone":"+55-11-96397-0171","address":{"@type":"PostalAddress","streetAddress":"Av. Corifeu de Azevedo Marques, 2875","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"05581-001","addressCountry":"BR"}}}
+    {"@context":"https://schema.org","@type":"Blog","name":"Blog Gold Car Mecânica","url":"https://www.goldcaroficina.com.br/blog/","description":"Dicas de manutenção automotiva, diagnóstico e cuidados com seu veículo","publisher":{"@type":"AutoRepair","@id":"https://www.goldcaroficina.com.br/","name":"Gold Car Mecânica","url":"https://www.goldcaroficina.com.br/","telephone":"+5511963970171","address":{"@type":"PostalAddress","streetAddress":"Av. Corifeu de Azevedo Marques, 2875","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"05339-000","addressCountry":"BR"}}}
     </script>
     <style>
         :root{--bg-dark:#0a0a0a;--bg-card:#111111;--gold:#c9912a;--gold-light:#e6b355;--gold-dim:#f5d18d;--white:#f5f5f5;--gray:#a0a0a0;--gray-dark:#666}
@@ -76,8 +76,6 @@
         .featured-title{font-size:1.9rem;line-height:1.15;color:var(--white);letter-spacing:0.5px}
         .card-excerpt{font-size:0.9rem;color:var(--gray);line-height:1.65}
         .card-link{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold)}
-        .card-kw-hint{font-size:10px;color:#3a3a3a;border-top:1px solid rgba(255,255,255,0.04);padding-top:10px;margin-top:4px}
-        .card-kw-hint span{color:#4a4a4a}
         .section-wrap{max-width:1140px;margin:0 auto;padding:0 5% 56px}
         .section-label{display:flex;align-items:center;gap:16px;margin-bottom:24px}
         .section-label h2{font-size:1.2rem;color:var(--gray);letter-spacing:2px;white-space:nowrap}
@@ -155,7 +153,7 @@
 
     <!-- DESTAQUE -->
     <div class="featured-wrap">
-        <a href="/blog/pastilha-de-freio.html" class="featured-card" aria-label="Artigo em destaque">
+        <a href="/blog/pastilha-de-freio" class="featured-card" aria-label="Artigo em destaque">
             <div class="featured-img"><img src="../fotos/pastilha-de-freio.webp" alt="Pastilha e disco de freio - troca de pastilha na Gold Car Mecânica" width="600" height="300" loading="eager" decoding="async"></div>
             <div class="featured-body">
                 <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
@@ -166,7 +164,6 @@
                 <h2 class="featured-title">Pastilha de Freio: Como Saber a Hora de Trocar</h2>
                 <p class="card-excerpt">A pastilha de freio e uma das peças de seguranca mais importantes do seu carro. Saiba identificar os 5 sinais de desgaste e quando a troca não pode esperar.</p>
                 <span class="card-link">Ler artigo completo &#8594;</span>
-                <p class="card-kw-hint"><span>Keyword: </span>pastilha de freio &mdash; 36.000 buscas/mes</p>
             </div>
         </a>
     </div>
@@ -176,7 +173,7 @@
         <div class="section-label"><h2>Freios</h2></div>
         <div class="articles-grid" id="articles-grid">
 
-            <a href="/blog/sistema-de-freios.html" class="article-card" data-cat="freios">
+            <a href="/blog/sistema-de-freios" class="article-card" data-cat="freios">
                 <div class="card-img"><img src="../fotos/sistema-de-freios.webp" alt="Sistema de freios automotivo - pinça e disco" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Freios</span><span class="card-date">16 Mai 2026</span></div>
@@ -194,7 +191,7 @@
         <div class="section-label"><h2>Motor &amp; Transmissão</h2></div>
         <div class="articles-grid">
 
-            <a href="/blog/embreagem-carro.html" class="article-card" data-cat="motor">
+            <a href="/blog/embreagem-carro" class="article-card" data-cat="motor">
                 <div class="card-img"><img src="../fotos/IMG_3849.webp" alt="Mecânico inspecionando embreagem do carro na Gold Car Mecânica" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Motor</span><span class="card-date">16 Mai 2026</span></div>
@@ -204,7 +201,7 @@
                 </div>
             </a>
 
-            <a href="/blog/correia-dentada.html" class="article-card" data-cat="motor">
+            <a href="/blog/correia-dentada" class="article-card" data-cat="motor">
                 <div class="card-img"><img src="../fotos/correia-dentada.webp" alt="Correia dentada e engrenagens do motor" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Motor</span><span class="card-date">16 Mai 2026</span></div>
@@ -214,7 +211,7 @@
                 </div>
             </a>
 
-            <a href="/blog/motor-superaquecendo.html" class="article-card" data-cat="motor">
+            <a href="/blog/motor-superaquecendo" class="article-card" data-cat="motor">
                 <div class="card-img"><img src="../fotos/IMG_3845.webp" alt="Mecânico inspecionando motor superaquecido na Gold Car" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Motor</span><span class="card-date">16 Mai 2026</span></div>
@@ -224,7 +221,7 @@
                 </div>
             </a>
 
-            <a href="/blog/velas-de-ignicao.html" class="article-card" data-cat="motor">
+            <a href="/blog/velas-de-ignicao" class="article-card" data-cat="motor">
                 <div class="card-img"><img src="../fotos/velas-de-ignicao.webp" alt="Velas de ignição desgastadas - quando trocar" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Motor</span><span class="card-date">16 Mai 2026</span></div>
@@ -242,7 +239,7 @@
         <div class="section-label"><h2>Manutenção Preventiva</h2></div>
         <div class="articles-grid">
 
-            <a href="/blog/revisao-do-carro.html" class="article-card" data-cat="manutencao">
+            <a href="/blog/revisao-do-carro" class="article-card" data-cat="manutencao">
                 <div class="card-img"><img src="../fotos/IMG_3849.webp" alt="Revisão completa do carro na Gold Car Mecânica, Vila Lageado" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Manutenção</span><span class="card-date">16 Mai 2026</span></div>
@@ -252,7 +249,7 @@
                 </div>
             </a>
 
-            <a href="/blog/manutencao-preventiva.html" class="article-card" data-cat="manutencao">
+            <a href="/blog/manutencao-preventiva" class="article-card" data-cat="manutencao">
                 <div class="card-img"><img src="../fotos/IMG_3871.webp" alt="Equipe Gold Car realizando manutenção preventiva em São Paulo" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Manutenção</span><span class="card-date">16 Mai 2026</span></div>
@@ -262,7 +259,7 @@
                 </div>
             </a>
 
-            <a href="/blog/troca-de-oleo.html" class="article-card" data-cat="manutencao">
+            <a href="/blog/troca-de-oleo" class="article-card" data-cat="manutencao">
                 <div class="card-img"><img src="../fotos/troca-de-oleo.webp" alt="Troca de óleo do motor com carro no elevador" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Manutenção</span><span class="card-date">16 Mai 2026</span></div>
@@ -280,7 +277,7 @@
         <div class="section-label"><h2>Suspensão &amp; Direção</h2></div>
         <div class="articles-grid">
 
-            <a href="/blog/alinhamento-balanceamento.html" class="article-card" data-cat="suspensao">
+            <a href="/blog/alinhamento-balanceamento" class="article-card" data-cat="suspensao">
                 <div class="card-img"><img src="../fotos/alinhamento-balanceamento.webp" alt="Mecânico fazendo alinhamento e balanceamento de rodas" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Suspensão</span><span class="card-date">16 Mai 2026</span></div>
@@ -290,7 +287,7 @@
                 </div>
             </a>
 
-            <a href="/blog/suspensao-do-carro.html" class="article-card" data-cat="suspensao">
+            <a href="/blog/suspensao-do-carro" class="article-card" data-cat="suspensao">
                 <div class="card-img"><img src="../fotos/suspensao-do-carro.webp" alt="Suspensão do carro vista por baixo do veículo" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Suspensão</span><span class="card-date">16 Mai 2026</span></div>
@@ -308,7 +305,7 @@
         <div class="section-label"><h2>Diagnóstico &amp; Auto Elétrica</h2></div>
         <div class="articles-grid">
 
-            <a href="/blog/diagnostico-automotivo.html" class="article-card" data-cat="diagnostico">
+            <a href="/blog/diagnostico-automotivo" class="article-card" data-cat="diagnostico">
                 <div class="card-img"><img src="../fotos/IMG_3862.webp" alt="Mecânico realizando diagnóstico eletrônico na Gold Car Mecânica" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Diagnóstico</span><span class="card-date">16 Mai 2026</span></div>
@@ -318,7 +315,7 @@
                 </div>
             </a>
 
-            <a href="/blog/injecao-eletronica.html" class="article-card" data-cat="diagnostico">
+            <a href="/blog/injecao-eletronica" class="article-card" data-cat="diagnostico">
                 <div class="card-img"><img src="../fotos/IMG_3871.webp" alt="Mecânicos verificando injeção eletrônica do motor" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Diagnóstico</span><span class="card-date">16 Mai 2026</span></div>
@@ -328,7 +325,7 @@
                 </div>
             </a>
 
-            <a href="/blog/bateria-do-carro.html" class="article-card" data-cat="eletrica">
+            <a href="/blog/bateria-do-carro" class="article-card" data-cat="eletrica">
                 <div class="card-img"><img src="../fotos/bateria-do-carro.webp" alt="Bateria automotiva com cabos - manutenção elétrica Gold Car" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Auto Elétrica</span><span class="card-date">16 Mai 2026</span></div>
@@ -346,7 +343,7 @@
         <div class="section-label"><h2>Gold Car em São Paulo</h2></div>
         <div class="articles-grid">
 
-            <a href="/blog/oficina-mecanica-vila-lageado.html" class="article-card" data-cat="goldcar">
+            <a href="/blog/oficina-mecanica-vila-lageado" class="article-card" data-cat="goldcar">
                 <div class="card-img"><img src="../fotos/IMG_7786.webp" alt="Equipe Gold Car Mecânica - oficina em Vila Lageado, São Paulo" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Gold Car</span><span class="card-date">16 Mai 2026</span></div>
@@ -356,7 +353,7 @@
                 </div>
             </a>
 
-            <a href="/blog/mecanica-butanta.html" class="article-card" data-cat="goldcar">
+            <a href="/blog/mecanica-butanta" class="article-card" data-cat="goldcar">
                 <div class="card-img"><img src="../fotos/IMG_7786.webp" alt="Equipe Gold Car Mecânica no Butantã, Zona Oeste de São Paulo" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Gold Car</span><span class="card-date">16 Mai 2026</span></div>

@@ -1,0 +1,21 @@
+# 301 redirects: versoes .html legadas -> URL canonica limpa
+/index.html / 301
+/politica-privacidade.html /politica-privacidade 301
+/blog/index.html /blog/ 301
+/blog/autor/joao-vitor.html /blog/autor/joao-vitor 301
+/blog/alinhamento-balanceamento.html /blog/alinhamento-balanceamento 301
+/blog/bateria-do-carro.html /blog/bateria-do-carro 301
+/blog/correia-dentada.html /blog/correia-dentada 301
+/blog/diagnostico-automotivo.html /blog/diagnostico-automotivo 301
+/blog/embreagem-carro.html /blog/embreagem-carro 301
+/blog/injecao-eletronica.html /blog/injecao-eletronica 301
+/blog/manutencao-preventiva.html /blog/manutencao-preventiva 301
+/blog/mecanica-butanta.html /blog/mecanica-butanta 301
+/blog/motor-superaquecendo.html /blog/motor-superaquecendo 301
+/blog/oficina-mecanica-vila-lageado.html /blog/oficina-mecanica-vila-lageado 301
+/blog/pastilha-de-freio.html /blog/pastilha-de-freio 301
+/blog/revisao-do-carro.html /blog/revisao-do-carro 301
+/blog/sistema-de-freios.html /blog/sistema-de-freios 301
+/blog/suspensao-do-carro.html /blog/suspensao-do-carro 301
+/blog/troca-de-oleo.html /blog/troca-de-oleo 301
+/blog/velas-de-ignicao.html /blog/velas-de-ignicao 301
