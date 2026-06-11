@@ -221,8 +221,8 @@
                 </div>
             </a>
 
-            <a href="/blog/velas-de-ignição" class="article-card" data-cat="motor">
-                <div class="card-img"><img src="../fotos/velas-de-ignição.webp" alt="Velas de ignição desgastadas - quando trocar" width="400" height="225" loading="lazy" decoding="async"></div>
+            <a href="/blog/velas-de-ignicao" class="article-card" data-cat="motor">
+                <div class="card-img"><img src="../fotos/velas-de-ignicao.webp" alt="Velas de ignição desgastadas - quando trocar" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Motor</span><span class="card-date">16 Mai 2026</span></div>
                     <h3 class="card-title">Velas de Ignição: Quando Trocar e Como Identificar</h3>
@@ -249,7 +249,7 @@
                 </div>
             </a>
 
-            <a href="/blog/manutenção-preventiva" class="article-card" data-cat="manutenção">
+            <a href="/blog/manutencao-preventiva" class="article-card" data-cat="manutenção">
                 <div class="card-img"><img src="../fotos/IMG_3871.webp" alt="Equipe Gold Car realizando manutenção preventiva em São Paulo" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Manutenção</span><span class="card-date">16 Mai 2026</span></div>
@@ -287,8 +287,8 @@
                 </div>
             </a>
 
-            <a href="/blog/suspensão-do-carro" class="article-card" data-cat="suspensão">
-                <div class="card-img"><img src="../fotos/suspensão-do-carro.webp" alt="Suspensão do carro vista por baixo do veículo" width="400" height="225" loading="lazy" decoding="async"></div>
+            <a href="/blog/suspensao-do-carro" class="article-card" data-cat="suspensão">
+                <div class="card-img"><img src="../fotos/suspensao-do-carro.webp" alt="Suspensão do carro vista por baixo do veículo" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Suspensão</span><span class="card-date">16 Mai 2026</span></div>
                     <h3 class="card-title">Suspensão do Carro: Sintomas de Desgaste</h3>
@@ -315,7 +315,7 @@
                 </div>
             </a>
 
-            <a href="/blog/injeção-eletronica" class="article-card" data-cat="diagnostico">
+            <a href="/blog/injecao-eletronica" class="article-card" data-cat="diagnostico">
                 <div class="card-img"><img src="../fotos/IMG_3871.webp" alt="Mecânicos verificando injeção eletrônica do motor" width="400" height="225" loading="lazy" decoding="async"></div>
                 <div class="card-body">
                     <div class="card-meta"><span class="card-badge">Diagnóstico</span><span class="card-date">16 Mai 2026</span></div>
@@ -386,4 +386,22 @@
             const expanded = toggle.getAttribute('aria-expanded') === 'true';
             toggle.setAttribute('aria-expanded', String(!expanded));
             navEl.classList.toggle('open');
-    
+        });
+    }
+
+    // Filtro por categoria
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.article-card');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const cat = btn.dataset.cat;
+            cards.forEach(card => {
+                card.style.display = (cat === 'todos' || card.dataset.cat === cat) ? '' : 'none';
+            });
+        });
+    });
+</script>
+</body>
+</html>
