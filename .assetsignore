@@ -40,3 +40,6 @@ desktop.ini
 *.log
 *.tmp
 node_modules/
+
+# Documentacao interna (analises, relatorios) — nao servir publicamente
+docs/
