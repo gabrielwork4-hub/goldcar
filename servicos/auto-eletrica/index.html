@@ -10,13 +10,13 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Auto elétrica em Vila Lageado, Butantã e Rio Pequeno: bateria, alternador, motor de partida e chicote. Diagnóstico com scanner sem custo no reparo.">
+    <meta name="description" content="Auto elétrica: bateria, alternador, motor de partida e chicote. Diagnóstico com scanner sem custo no reparo. Duas unidades em São Paulo.">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="geo.region" content="BR-SP">
     <meta name="geo.placename" content="São Paulo">
     <meta name="geo.position" content="-23.564200;-46.743700">
-    <meta property="og:title" content="Auto Elétrica Perto de Mim — Gold Car, Vila Lageado SP">
-    <meta property="og:description" content="Auto elétrica em Vila Lageado, Butantã e Rio Pequeno: bateria, alternador, motor de partida e chicote. Diagnóstico com scanner sem custo no reparo.">
+    <meta property="og:title" content="Auto Elétrica Perto de Mim — Gold Car, Butantã e Rio Pequeno">
+    <meta property="og:description" content="Auto elétrica: bateria, alternador, motor de partida e chicote. Diagnóstico com scanner sem custo no reparo. Duas unidades em São Paulo.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.goldcaroficina.com.br/servicos/auto-eletrica/">
     <meta property="og:image" content="https://www.goldcaroficina.com.br/fotos/IMG_3845.webp">
@@ -24,7 +24,7 @@
     <meta property="og:locale" content="pt_BR">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://www.goldcaroficina.com.br/servicos/auto-eletrica/">
-    <title>Auto Elétrica Perto de Mim — Gold Car, Vila Lageado SP</title>
+    <title>Auto Elétrica Perto de Mim — Gold Car, Butantã e Rio Pequeno</title>
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -38,6 +38,26 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "AutoRepair",
+      "@id": "https://www.goldcaroficina.com.br/#oficina-rio-pequeno",
+      "name": "Gold Car Mecânica",
+      "alternateName": "Gold Car Mecânica — Unidade Rio Pequeno",
+      "branchOf": {
+        "@id": "https://www.goldcaroficina.com.br/#oficina"
+      },
+      "url": "https://www.goldcaroficina.com.br/servicos/",
+      "telephone": "+5511963970171",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Professora Ana Maria Lelis da Silva, 166",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "image": "https://www.goldcaroficina.com.br/fotos/IMG_3845.webp",
+      "logo": "https://www.goldcaroficina.com.br/assets/logo.png"
+    },
     {
       "@type": "AutoRepair",
       "@id": "https://www.goldcaroficina.com.br/#oficina",
@@ -135,9 +155,14 @@
       "serviceType": "Auto elétrica automotiva",
       "url": "https://www.goldcaroficina.com.br/servicos/auto-eletrica/",
       "description": "Auto elétrica em Vila Lageado, São Paulo: bateria, alternador, motor de partida, chicote, iluminação, vidro e trava elétrica, alarme e diagnóstico com scanner.",
-      "provider": {
-        "@id": "https://www.goldcaroficina.com.br/#oficina"
-      },
+      "provider": [
+        {
+          "@id": "https://www.goldcaroficina.com.br/#oficina"
+        },
+        {
+          "@id": "https://www.goldcaroficina.com.br/#oficina-rio-pequeno"
+        }
+      ],
       "areaServed": [
         {
           "@type": "Place",
@@ -451,6 +476,7 @@
         .svc-card span { font-size: 10px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--gold); }
         .unit-card { background: #0f0f0f; border: 1px solid rgba(201,145,42,0.2); border-radius: 8px; padding: 22px 24px; margin: 1.4rem 0 2rem; }
         .unit-card h3 { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: 1.2rem; color: var(--gold-light); margin: 0 0 12px; }
+        .unit-card .unit-tag { font-family: 'DM Sans', sans-serif; text-transform: uppercase; font-size: 9px; letter-spacing: 1.4px; color: var(--gold); background: rgba(201,145,42,0.12); border-radius: 3px; padding: 3px 7px; vertical-align: middle; margin-left: 8px; }
         .unit-card dl { display: grid; grid-template-columns: 130px 1fr; gap: 8px 16px; margin: 0; font-size: 0.95rem; }
         .unit-card dt { color: var(--gold); font-size: 0.78rem; letter-spacing: 1px; text-transform: uppercase; padding-top: 3px; }
         .unit-card dd { margin: 0; color: #c8c8c8; }
@@ -471,6 +497,7 @@
 <!--
     DADOS PENDENTES DA GOLD CAR para esta pagina (ver 09-dados-pendentes-cliente.md).
     Enquanto nao chegarem, as secoes correspondentes NAO existem nesta pagina:
+      - CEP, horario de funcionamento e telefone proprio (se houver) da unidade Rio Pequeno - a pagina publica so o logradouro, confirmado pelo cliente em 05/09/2026
       - Preco de teste eletrico, bateria, alternador e motor de partida (item 11 do doc 09) - a secao 'Quanto custa' NAO existe ate esse dado chegar
       - Atendimento no mesmo dia em auto eletrica (item 9) - nao afirmado em lugar nenhum da pagina, e diferencial forte de conversao quando confirmado
       - Prazo da garantia do servico em meses (item 4)
@@ -499,7 +526,7 @@
 
 <header class="article-header">
     <p class="eyebrow">Auto elétrica</p>
-    <h1>Auto elétrica perto de mim: Gold Car, Vila Lageado e Butantã</h1>
+    <h1>Auto elétrica perto de mim: Gold Car, Butantã e Rio Pequeno</h1>
     <div class="meta">
         <span>Atualizado em 5 de setembro de 2026</span>
         <span>Gold Car Mecânica &mdash; Vila Lageado, São Paulo</span>
@@ -518,7 +545,7 @@
 
 <article class="article-body">
     <div class="intro-box">
-        <p>Se você procurou <strong>auto elétrica perto de mim</strong> porque o carro não pegou hoje de manhã, a Gold Car fica na Av. Corifeu de Azevedo Marques, 2875, em Vila Lageado, São Paulo &mdash; entre o Butantã, o Rio Pequeno e a divisa com Osasco. São mais de 10 anos de auto elétrica e injeção eletrônica, em veículos nacionais, importados, elétricos e utilitários.</p>
+        <p>Se você procurou <strong>auto elétrica perto de mim</strong> porque o carro não pegou hoje de manhã, a Gold Car tem <strong>duas unidades</strong> na Zona Oeste: Vila Lageado, na Av. Corifeu de Azevedo Marques, 2875, e Rio Pequeno, na R. Professora Ana Maria Lelis da Silva, 166. São mais de 10 anos de auto elétrica e injeção eletrônica, em veículos nacionais, importados, elétricos e utilitários.</p>
         <p>Falha elétrica é urgência: o carro para onde está. Abaixo, o teste que dá para fazer antes de sair de casa e como funciona o diagnóstico aqui.</p>
     </div>
 
@@ -562,19 +589,28 @@
     <p><strong>O diagnóstico computadorizado não é cobrado quando o reparo é feito conosco</strong> &mdash; se você preferir não reparar, cobramos apenas a inspeção técnica. Nada é executado sem a sua aprovação, e a saída tem nota fiscal e garantia formal.</p>
     <p>Peça elétrica costuma ter <strong>duas garantias distintas</strong>: a do fabricante (bateria e alternador têm prazo próprio, informado na nota) e a do serviço de instalação, que é nossa. As duas constam do orçamento.</p>
 
-    <h2>Onde estamos</h2>
+    <h2>As duas unidades</h2>
     <div class="unit-card">
-    <h3>Gold Car Mecânica &mdash; Vila Lageado</h3>
+    <h3>Unidade Vila Lageado <span class="unit-tag">matriz</span></h3>
     <dl>
         <dt>Endereço</dt><dd><a href="https://maps.app.goo.gl/hoQ78iUo4V5hE28b7" target="_blank" rel="noopener">Av. Corifeu de Azevedo Marques, 2875 &mdash; Vila Lageado, São Paulo/SP, CEP 05339-000</a></dd>
         <dt>Telefone</dt><dd><a href="https://wa.me/5511963970171">(11) 96397-0171</a> (WhatsApp)</dd>
         <dt>Horário</dt><dd>Segunda a sexta, das 9h às 18h</dd>
-        <dt>Referência</dt><dd>Av. Corifeu de Azevedo Marques, sentido Butantã&ndash;Osasco, a poucos minutos do Rio Pequeno e da Raposo Tavares</dd>
+        <dt>Referência</dt><dd>Sobre a Av. Corifeu de Azevedo Marques, sentido Butantã&ndash;Osasco</dd>
+    </dl>
+</div>
+
+<div class="unit-card">
+    <h3>Unidade Rio Pequeno</h3>
+    <dl>
+        <dt>Endereço</dt><dd>R. Professora Ana Maria Lelis da Silva, 166 &mdash; Rio Pequeno, São Paulo/SP</dd>
+        <dt>Telefone</dt><dd><a href="https://wa.me/5511963970171">(11) 96397-0171</a> (WhatsApp)</dd>
+        <dt>Referência</dt><dd>Travessa da Av. Rio Pequeno</dd>
     </dl>
 </div>
 
     <h2>Bairros atendidos</h2>
-    <p>Estamos sobre a Av. Corifeu de Azevedo Marques, entre o Butantã e Osasco, perto de quem está em <strong>Vila Lageado, Butantã, Rio Pequeno, Jardim Bonfiglioli, Jardim Ester, Raposo Tavares, Cidade Universitária, Vila Indiana, Jaguaré, Pinheiros, Parque Continental, Presidente Altino e Osasco</strong>. Em falha elétrica isso pesa mais que em qualquer outro serviço: com o carro sem pegar, o Leva &amp; Traz busca o veículo nesses bairros sem custo adicional.</p>
+    <p>A matriz fica sobre a Av. Corifeu de Azevedo Marques, entre o Butantã e Osasco, e a segunda unidade numa travessa da Av. Rio Pequeno &mdash; duas frentes na região, perto de quem está em <strong>Vila Lageado, Butantã, Rio Pequeno, Jardim Bonfiglioli, Jardim Ester, Raposo Tavares, Cidade Universitária, Vila Indiana, Jaguaré, Pinheiros, Parque Continental, Presidente Altino e Osasco</strong>. Em falha elétrica isso pesa mais que em qualquer outro serviço: com o carro sem pegar, o Leva &amp; Traz busca o veículo nesses bairros sem custo adicional.</p>
 
     <div class="cta-box">
         <p>Carro não pega agora? Diga o que acontece ao girar a chave &mdash; <strong>silêncio, "tec-tec-tec" ou um estalo seco</strong> &mdash; que a gente já indica o caminho.</p>
@@ -611,7 +647,7 @@
 <section class="post-cta" aria-label="Fale com a Gold Car">
     <div class="post-cta-inner">
         <h2>Fale com a Gold Car</h2>
-        <p>Atendemos Vila Lageado, Butantã, Rio Pequeno, Pinheiros, Jaguaré e Osasco, de segunda a sexta, das 9h às 18h. Mande o modelo do carro e o sintoma pelo WhatsApp que a gente já te dá o encaminhamento.</p>
+        <p>Duas unidades em São Paulo &mdash; Vila Lageado e Rio Pequeno &mdash; atendendo Butantã, Pinheiros, Jaguaré e Osasco. Mande o modelo do carro e o sintoma pelo WhatsApp que a gente já te dá o encaminhamento e indica a unidade mais perto de você.</p>
         <div class="post-cta-actions">
             <a href="https://wa.me/5511963970171" class="post-cta-btn primary">WhatsApp (11) 96397-0171</a>
             <a href="/servicos/" class="post-cta-btn outline">Ver todos os serviços</a>

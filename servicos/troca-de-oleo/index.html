@@ -10,13 +10,13 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Troca de óleo e filtro em Vila Lageado, Butantã e Rio Pequeno. O que está incluso, de quantos em quantos km trocar e como saber qual óleo o seu carro usa.">
+    <meta name="description" content="Troca de óleo e filtro em duas unidades em São Paulo. O que está incluso, de quantos em quantos km trocar e como saber qual óleo o seu carro usa.">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="geo.region" content="BR-SP">
     <meta name="geo.placename" content="São Paulo">
     <meta name="geo.position" content="-23.564200;-46.743700">
-    <meta property="og:title" content="Troca de Óleo Perto de Mim — Gold Car, Vila Lageado SP">
-    <meta property="og:description" content="Troca de óleo e filtro em Vila Lageado, Butantã e Rio Pequeno. O que está incluso, de quantos em quantos km trocar e como saber qual óleo o seu carro usa.">
+    <meta property="og:title" content="Troca de Óleo Perto de Mim — Gold Car, Butantã e Rio Pequeno">
+    <meta property="og:description" content="Troca de óleo e filtro em duas unidades em São Paulo. O que está incluso, de quantos em quantos km trocar e como saber qual óleo o seu carro usa.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.goldcaroficina.com.br/servicos/troca-de-oleo/">
     <meta property="og:image" content="https://www.goldcaroficina.com.br/fotos/IMG_3845.webp">
@@ -24,7 +24,7 @@
     <meta property="og:locale" content="pt_BR">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://www.goldcaroficina.com.br/servicos/troca-de-oleo/">
-    <title>Troca de Óleo Perto de Mim — Gold Car, Vila Lageado SP</title>
+    <title>Troca de Óleo Perto de Mim — Gold Car, Butantã e Rio Pequeno</title>
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -38,6 +38,26 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "AutoRepair",
+      "@id": "https://www.goldcaroficina.com.br/#oficina-rio-pequeno",
+      "name": "Gold Car Mecânica",
+      "alternateName": "Gold Car Mecânica — Unidade Rio Pequeno",
+      "branchOf": {
+        "@id": "https://www.goldcaroficina.com.br/#oficina"
+      },
+      "url": "https://www.goldcaroficina.com.br/servicos/",
+      "telephone": "+5511963970171",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Professora Ana Maria Lelis da Silva, 166",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "image": "https://www.goldcaroficina.com.br/fotos/IMG_3845.webp",
+      "logo": "https://www.goldcaroficina.com.br/assets/logo.png"
+    },
     {
       "@type": "AutoRepair",
       "@id": "https://www.goldcaroficina.com.br/#oficina",
@@ -135,9 +155,14 @@
       "serviceType": "Troca de óleo e filtro",
       "url": "https://www.goldcaroficina.com.br/servicos/troca-de-oleo/",
       "description": "Troca de óleo e filtro em Vila Lageado, São Paulo, com verificação de níveis, checagem dos filtros de ar e de cabine e descarte correto do óleo usado.",
-      "provider": {
-        "@id": "https://www.goldcaroficina.com.br/#oficina"
-      },
+      "provider": [
+        {
+          "@id": "https://www.goldcaroficina.com.br/#oficina"
+        },
+        {
+          "@id": "https://www.goldcaroficina.com.br/#oficina-rio-pequeno"
+        }
+      ],
       "areaServed": [
         {
           "@type": "Place",
@@ -403,6 +428,7 @@
         .svc-card span { font-size: 10px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--gold); }
         .unit-card { background: #0f0f0f; border: 1px solid rgba(201,145,42,0.2); border-radius: 8px; padding: 22px 24px; margin: 1.4rem 0 2rem; }
         .unit-card h3 { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: 1.2rem; color: var(--gold-light); margin: 0 0 12px; }
+        .unit-card .unit-tag { font-family: 'DM Sans', sans-serif; text-transform: uppercase; font-size: 9px; letter-spacing: 1.4px; color: var(--gold); background: rgba(201,145,42,0.12); border-radius: 3px; padding: 3px 7px; vertical-align: middle; margin-left: 8px; }
         .unit-card dl { display: grid; grid-template-columns: 130px 1fr; gap: 8px 16px; margin: 0; font-size: 0.95rem; }
         .unit-card dt { color: var(--gold); font-size: 0.78rem; letter-spacing: 1px; text-transform: uppercase; padding-top: 3px; }
         .unit-card dd { margin: 0; color: #c8c8c8; }
@@ -423,6 +449,7 @@
 <!--
     DADOS PENDENTES DA GOLD CAR para esta pagina (ver 09-dados-pendentes-cliente.md).
     Enquanto nao chegarem, as secoes correspondentes NAO existem nesta pagina:
+      - CEP, horario de funcionamento e telefone proprio (se houver) da unidade Rio Pequeno - a pagina publica so o logradouro, confirmado pelo cliente em 05/09/2026
       - ATENCAO: preco por tipo de oleo (item 2 do doc 09). O briefing 05 diz 'sem isso, nao publicar' - esta e a categoria em que o preco e o eixo de decisao. A pagina foi para o ar sem a secao 'Quanto custa' por decisao do cliente; revisar assim que o dado chegar
       - Tempo de execucao em minutos (briefing 05) - nao afirmado na pagina
       - Atendimento por ordem de chegada, sem agendamento (item 10)
@@ -451,7 +478,7 @@
 
 <header class="article-header">
     <p class="eyebrow">Troca de óleo</p>
-    <h1>Troca de óleo perto de mim: Gold Car, Vila Lageado e Butantã</h1>
+    <h1>Troca de óleo perto de mim: Gold Car, Butantã e Rio Pequeno</h1>
     <div class="meta">
         <span>Atualizado em 5 de setembro de 2026</span>
         <span>Gold Car Mecânica &mdash; Vila Lageado, São Paulo</span>
@@ -470,7 +497,7 @@
 
 <article class="article-body">
     <div class="intro-box">
-        <p>Quem procura <strong>troca de óleo perto de mim</strong> na Zona Oeste de São Paulo encontra a Gold Car na Av. Corifeu de Azevedo Marques, 2875, em Vila Lageado &mdash; entre o Butantã, o Rio Pequeno e a divisa com Osasco, de segunda a sexta, das 9h às 18h.</p>
+        <p>Quem procura <strong>troca de óleo perto de mim</strong> na Zona Oeste de São Paulo encontra a Gold Car em <strong>duas unidades</strong>: Vila Lageado, na Av. Corifeu de Azevedo Marques, 2875, e Rio Pequeno, na R. Professora Ana Maria Lelis da Silva, 166.</p>
         <p>Esta página responde as três coisas que decidem a troca: <strong>o que está incluso</strong>, <strong>de quantos em quantos quilômetros trocar</strong> e <strong>qual óleo o seu carro usa</strong>.</p>
     </div>
 
@@ -527,19 +554,28 @@
     </ul>
     <p>Passar do prazo não estraga o motor de um dia para o outro, mas acelera um desgaste irreversível &mdash; conta que só aparece anos depois, muito mais cara. É o item mais barato da <a href="/blog/manutencao-preventiva">manutenção preventiva</a> e o que mais protege o motor.</p>
 
-    <h2>Onde estamos</h2>
+    <h2>As duas unidades</h2>
     <div class="unit-card">
-    <h3>Gold Car Mecânica &mdash; Vila Lageado</h3>
+    <h3>Unidade Vila Lageado <span class="unit-tag">matriz</span></h3>
     <dl>
         <dt>Endereço</dt><dd><a href="https://maps.app.goo.gl/hoQ78iUo4V5hE28b7" target="_blank" rel="noopener">Av. Corifeu de Azevedo Marques, 2875 &mdash; Vila Lageado, São Paulo/SP, CEP 05339-000</a></dd>
         <dt>Telefone</dt><dd><a href="https://wa.me/5511963970171">(11) 96397-0171</a> (WhatsApp)</dd>
         <dt>Horário</dt><dd>Segunda a sexta, das 9h às 18h</dd>
-        <dt>Referência</dt><dd>Av. Corifeu de Azevedo Marques, sentido Butantã&ndash;Osasco, a poucos minutos do Rio Pequeno e da Raposo Tavares</dd>
+        <dt>Referência</dt><dd>Sobre a Av. Corifeu de Azevedo Marques, sentido Butantã&ndash;Osasco</dd>
+    </dl>
+</div>
+
+<div class="unit-card">
+    <h3>Unidade Rio Pequeno</h3>
+    <dl>
+        <dt>Endereço</dt><dd>R. Professora Ana Maria Lelis da Silva, 166 &mdash; Rio Pequeno, São Paulo/SP</dd>
+        <dt>Telefone</dt><dd><a href="https://wa.me/5511963970171">(11) 96397-0171</a> (WhatsApp)</dd>
+        <dt>Referência</dt><dd>Travessa da Av. Rio Pequeno</dd>
     </dl>
 </div>
 
     <h2>Bairros atendidos</h2>
-    <p>A oficina fica sobre a Av. Corifeu de Azevedo Marques, corredor que liga o Butantã a Osasco, parada rápida para quem está em <strong>Vila Lageado, Butantã, Rio Pequeno, Jardim Bonfiglioli, Jardim Ester, Raposo Tavares, Cidade Universitária, Vila Indiana, Jaguaré, Pinheiros, Parque Continental, Presidente Altino e Osasco</strong>. Nesses bairros o Leva &amp; Traz busca e devolve o carro sem custo adicional.</p>
+    <p>A matriz fica sobre a Av. Corifeu de Azevedo Marques, corredor que liga o Butantã a Osasco, e a segunda unidade numa travessa da Av. Rio Pequeno &mdash; duas paradas rápidas para quem está em <strong>Vila Lageado, Butantã, Rio Pequeno, Jardim Bonfiglioli, Jardim Ester, Raposo Tavares, Cidade Universitária, Vila Indiana, Jaguaré, Pinheiros, Parque Continental, Presidente Altino e Osasco</strong>. Nesses bairros o Leva &amp; Traz busca e devolve o carro sem custo adicional.</p>
 
     <div class="cta-box">
         <p>Mande <strong>modelo, ano e quilometragem</strong> pelo WhatsApp que a gente confirma qual óleo o seu carro usa e o horário disponível.</p>
@@ -576,7 +612,7 @@
 <section class="post-cta" aria-label="Fale com a Gold Car">
     <div class="post-cta-inner">
         <h2>Fale com a Gold Car</h2>
-        <p>Atendemos Vila Lageado, Butantã, Rio Pequeno, Pinheiros, Jaguaré e Osasco, de segunda a sexta, das 9h às 18h. Mande o modelo do carro e o sintoma pelo WhatsApp que a gente já te dá o encaminhamento.</p>
+        <p>Duas unidades em São Paulo &mdash; Vila Lageado e Rio Pequeno &mdash; atendendo Butantã, Pinheiros, Jaguaré e Osasco. Mande o modelo do carro e o sintoma pelo WhatsApp que a gente já te dá o encaminhamento e indica a unidade mais perto de você.</p>
         <div class="post-cta-actions">
             <a href="https://wa.me/5511963970171" class="post-cta-btn primary">WhatsApp (11) 96397-0171</a>
             <a href="/servicos/" class="post-cta-btn outline">Ver todos os serviços</a>

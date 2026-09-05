@@ -10,13 +10,13 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mecânica geral, auto elétrica, troca de óleo, suspensão, freios e injeção eletrônica em Vila Lageado, São Paulo. Orçamento antes da execução e nota fiscal.">
+    <meta name="description" content="Mecânica geral, auto elétrica, troca de óleo, suspensão, freios e injeção eletrônica. Duas unidades em São Paulo: Vila Lageado e Rio Pequeno.">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="geo.region" content="BR-SP">
     <meta name="geo.placename" content="São Paulo">
     <meta name="geo.position" content="-23.564200;-46.743700">
-    <meta property="og:title" content="Serviços — Gold Car Mecânica | Vila Lageado e Butantã">
-    <meta property="og:description" content="Mecânica geral, auto elétrica, troca de óleo, suspensão, freios e injeção eletrônica em Vila Lageado, São Paulo. Orçamento antes da execução e nota fiscal.">
+    <meta property="og:title" content="Serviços — Gold Car Mecânica | Butantã e Rio Pequeno">
+    <meta property="og:description" content="Mecânica geral, auto elétrica, troca de óleo, suspensão, freios e injeção eletrônica. Duas unidades em São Paulo: Vila Lageado e Rio Pequeno.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.goldcaroficina.com.br/servicos/">
     <meta property="og:image" content="https://www.goldcaroficina.com.br/fotos/IMG_3845.webp">
@@ -24,7 +24,7 @@
     <meta property="og:locale" content="pt_BR">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://www.goldcaroficina.com.br/servicos/">
-    <title>Serviços — Gold Car Mecânica | Vila Lageado e Butantã</title>
+    <title>Serviços — Gold Car Mecânica | Butantã e Rio Pequeno</title>
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -40,7 +40,27 @@
   "@graph": [
     {
       "@type": "AutoRepair",
-      "@id": "https://www.goldcaroficina.com.br/servicos/#oficina",
+      "@id": "https://www.goldcaroficina.com.br/#oficina-rio-pequeno",
+      "name": "Gold Car Mecânica",
+      "alternateName": "Gold Car Mecânica — Unidade Rio Pequeno",
+      "branchOf": {
+        "@id": "https://www.goldcaroficina.com.br/#oficina"
+      },
+      "url": "https://www.goldcaroficina.com.br/servicos/",
+      "telephone": "+5511963970171",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Professora Ana Maria Lelis da Silva, 166",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "image": "https://www.goldcaroficina.com.br/fotos/IMG_3845.webp",
+      "logo": "https://www.goldcaroficina.com.br/assets/logo.png"
+    },
+    {
+      "@type": "AutoRepair",
+      "@id": "https://www.goldcaroficina.com.br/#oficina",
       "name": "Gold Car Mecânica",
       "url": "https://www.goldcaroficina.com.br/",
       "telephone": "+5511963970171",
@@ -219,7 +239,7 @@
           "name": "Qual região vocês atendem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Estamos em Vila Lageado, São Paulo. Atendemos Butantã, Rio Pequeno, Jardim Bonfiglioli, Jardim Ester, Raposo Tavares, Cidade Universitária, Vila Indiana, Jaguaré, Pinheiros, Parque Continental, Presidente Altino e Osasco. Nesses bairros o sistema Leva & Traz busca e devolve o carro sem custo adicional."
+            "text": "Temos duas unidades em São Paulo: Vila Lageado, na Av. Corifeu de Azevedo Marques, 2875, e Rio Pequeno, na R. Professora Ana Maria Lelis da Silva, 166. Atendemos Butantã, Rio Pequeno, Jardim Bonfiglioli, Jardim Ester, Raposo Tavares, Cidade Universitária, Vila Indiana, Jaguaré, Pinheiros, Parque Continental, Presidente Altino e Osasco. Nesses bairros o sistema Leva & Traz busca e devolve o carro sem custo adicional."
           }
         },
         {
@@ -390,6 +410,7 @@
         .svc-card span { font-size: 10px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--gold); }
         .unit-card { background: #0f0f0f; border: 1px solid rgba(201,145,42,0.2); border-radius: 8px; padding: 22px 24px; margin: 1.4rem 0 2rem; }
         .unit-card h3 { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: 1.2rem; color: var(--gold-light); margin: 0 0 12px; }
+        .unit-card .unit-tag { font-family: 'DM Sans', sans-serif; text-transform: uppercase; font-size: 9px; letter-spacing: 1.4px; color: var(--gold); background: rgba(201,145,42,0.12); border-radius: 3px; padding: 3px 7px; vertical-align: middle; margin-left: 8px; }
         .unit-card dl { display: grid; grid-template-columns: 130px 1fr; gap: 8px 16px; margin: 0; font-size: 0.95rem; }
         .unit-card dt { color: var(--gold); font-size: 0.78rem; letter-spacing: 1px; text-transform: uppercase; padding-top: 3px; }
         .unit-card dd { margin: 0; color: #c8c8c8; }
@@ -410,6 +431,7 @@
 <!--
     DADOS PENDENTES DA GOLD CAR para esta pagina (ver 09-dados-pendentes-cliente.md).
     Enquanto nao chegarem, as secoes correspondentes NAO existem nesta pagina:
+      - CEP, horario de funcionamento e telefone proprio (se houver) da unidade Rio Pequeno - a pagina publica so o logradouro, confirmado pelo cliente em 05/09/2026
       - Faixa de preco inicial em cada cartao de servico (item 1, 2, 3 e 11 do doc 09)
       - Ano de fundacao exato (item 6) - hoje o texto usa 'mais de 10 anos', que ja e o dado do site
       - Confirmacao de horario de sabado, se houver (item 7)
@@ -455,7 +477,7 @@
 
 <article class="article-body">
     <div class="intro-box">
-        <p>A Gold Car é uma oficina de <strong>mecânica geral, auto elétrica e turbina</strong> na Av. Corifeu de Azevedo Marques, em Vila Lageado, São Paulo &mdash; a poucos minutos do Butantã, do Rio Pequeno e da divisa com Osasco. São mais de 10 anos atendendo veículos nacionais, importados, elétricos e utilitários.</p>
+        <p>A Gold Car é uma oficina de <strong>mecânica geral, auto elétrica e turbina</strong> com <strong>duas unidades em São Paulo</strong>: a matriz na Av. Corifeu de Azevedo Marques, em Vila Lageado, e a segunda na R. Professora Ana Maria Lelis da Silva, no Rio Pequeno. São mais de 10 anos atendendo veículos nacionais, importados, elétricos e utilitários.</p>
         <p>Esta página reúne o que executamos e leva direto ao detalhe de cada serviço. Se você já sabe o que precisa, escolha abaixo. Se não sabe, descreva o sintoma no WhatsApp que a gente identifica.</p>
     </div>
 
@@ -503,19 +525,28 @@
         <figcaption>A equipe da Gold Car na unidade de Vila Lageado, na Av. Corifeu de Azevedo Marques.</figcaption>
     </figure>
 
-    <h2>Onde estamos</h2>
+    <h2>As duas unidades</h2>
     <div class="unit-card">
-    <h3>Gold Car Mecânica &mdash; Vila Lageado</h3>
+    <h3>Unidade Vila Lageado <span class="unit-tag">matriz</span></h3>
     <dl>
         <dt>Endereço</dt><dd><a href="https://maps.app.goo.gl/hoQ78iUo4V5hE28b7" target="_blank" rel="noopener">Av. Corifeu de Azevedo Marques, 2875 &mdash; Vila Lageado, São Paulo/SP, CEP 05339-000</a></dd>
         <dt>Telefone</dt><dd><a href="https://wa.me/5511963970171">(11) 96397-0171</a> (WhatsApp)</dd>
         <dt>Horário</dt><dd>Segunda a sexta, das 9h às 18h</dd>
-        <dt>Referência</dt><dd>Av. Corifeu de Azevedo Marques, sentido Butantã&ndash;Osasco, a poucos minutos do Rio Pequeno e da Raposo Tavares</dd>
+        <dt>Referência</dt><dd>Sobre a Av. Corifeu de Azevedo Marques, sentido Butantã&ndash;Osasco</dd>
+    </dl>
+</div>
+
+<div class="unit-card">
+    <h3>Unidade Rio Pequeno</h3>
+    <dl>
+        <dt>Endereço</dt><dd>R. Professora Ana Maria Lelis da Silva, 166 &mdash; Rio Pequeno, São Paulo/SP</dd>
+        <dt>Telefone</dt><dd><a href="https://wa.me/5511963970171">(11) 96397-0171</a> (WhatsApp)</dd>
+        <dt>Referência</dt><dd>Travessa da Av. Rio Pequeno</dd>
     </dl>
 </div>
 
     <h2>Bairros atendidos</h2>
-    <p>A oficina fica na Av. Corifeu de Azevedo Marques, um dos eixos que ligam o Butantã a Osasco, e por isso atende sem desvio quem está em <strong>Vila Lageado, Butantã, Rio Pequeno, Jardim Bonfiglioli, Jardim Ester, Raposo Tavares, Cidade Universitária, Vila Indiana, Jaguaré, Pinheiros, Parque Continental, Presidente Altino e Osasco</strong>. Nesses bairros o sistema Leva &amp; Traz busca e devolve o veículo sem custo adicional. Para outras regiões, é só combinar pelo WhatsApp.</p>
+    <p>As duas unidades cobrem a mesma região por dois lados: a matriz fica sobre a Av. Corifeu de Azevedo Marques, um dos eixos que ligam o Butantã a Osasco, e a unidade do Rio Pequeno fica numa travessa da Av. Rio Pequeno. Juntas, atendem sem desvio quem está em <strong>Vila Lageado, Butantã, Rio Pequeno, Jardim Bonfiglioli, Jardim Ester, Raposo Tavares, Cidade Universitária, Vila Indiana, Jaguaré, Pinheiros, Parque Continental, Presidente Altino e Osasco</strong>. Nesses bairros o sistema Leva &amp; Traz busca e devolve o veículo sem custo adicional. Para outras regiões, é só combinar pelo WhatsApp.</p>
 
     <div class="cta-box">
         <p>Não sabe qual serviço o seu carro precisa? Descreva o <strong>sintoma</strong> &mdash; barulho, luz no painel, cheiro, vibração &mdash; que a gente diz o que investigar.</p>
@@ -539,7 +570,7 @@
         </div>
         <div class="faq-item">
             <div class="faq-q">Qual região vocês atendem?</div>
-            <div class="faq-a"><p>Estamos em Vila Lageado, São Paulo. Atendemos Butantã, Rio Pequeno, Jardim Bonfiglioli, Jardim Ester, Raposo Tavares, Cidade Universitária, Vila Indiana, Jaguaré, Pinheiros, Parque Continental, Presidente Altino e Osasco. Nesses bairros o sistema Leva & Traz busca e devolve o carro sem custo adicional.</p></div>
+            <div class="faq-a"><p>Temos duas unidades em São Paulo: Vila Lageado, na Av. Corifeu de Azevedo Marques, 2875, e Rio Pequeno, na R. Professora Ana Maria Lelis da Silva, 166. Atendemos Butantã, Rio Pequeno, Jardim Bonfiglioli, Jardim Ester, Raposo Tavares, Cidade Universitária, Vila Indiana, Jaguaré, Pinheiros, Parque Continental, Presidente Altino e Osasco. Nesses bairros o sistema Leva & Traz busca e devolve o carro sem custo adicional.</p></div>
         </div>
         <div class="faq-item">
             <div class="faq-q">Vocês emitem nota fiscal?</div>
@@ -550,7 +581,7 @@
 <section class="post-cta" aria-label="Fale com a Gold Car">
     <div class="post-cta-inner">
         <h2>Fale com a Gold Car</h2>
-        <p>Atendemos Vila Lageado, Butantã, Rio Pequeno, Pinheiros, Jaguaré e Osasco, de segunda a sexta, das 9h às 18h. Mande o modelo do carro e o sintoma pelo WhatsApp que a gente já te dá o encaminhamento.</p>
+        <p>Duas unidades em São Paulo &mdash; Vila Lageado e Rio Pequeno &mdash; atendendo Butantã, Pinheiros, Jaguaré e Osasco. Mande o modelo do carro e o sintoma pelo WhatsApp que a gente já te dá o encaminhamento e indica a unidade mais perto de você.</p>
         <div class="post-cta-actions">
             <a href="https://wa.me/5511963970171" class="post-cta-btn primary">WhatsApp (11) 96397-0171</a>
             <a href="/servicos/" class="post-cta-btn outline">Ver todos os serviços</a>
