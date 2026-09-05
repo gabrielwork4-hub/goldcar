@@ -435,6 +435,21 @@
         .unit-card dd a { color: var(--gold-light); text-decoration: none; }
         .unit-card dd a:hover { color: var(--white); }
         @media (max-width: 560px) { .unit-card dl { grid-template-columns: 1fr; gap: 2px 0; } .unit-card dt { padding-top: 10px; } }
+        /* AVALIACOES (espelho simplificado da home) */
+        .reviews-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 0.9rem; color: var(--gray); margin: 0 0 1.2rem; }
+        .reviews-head .stars { color: var(--gold); letter-spacing: 2px; }
+        .reviews-head strong { color: var(--white); font-size: 1.05rem; }
+        .reviews-head a { color: var(--gold-light); text-decoration: none; border-bottom: 1px solid rgba(201,145,42,0.3); }
+        .reviews-head a:hover { color: var(--white); }
+        .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0 0 2rem; }
+        @media (max-width: 860px) { .reviews-grid { grid-template-columns: 1fr; } }
+        .review-card { background: var(--bg-card); border: 1px solid rgba(201,145,42,0.12); border-radius: 8px; padding: 16px 16px; }
+        .review-card .r-name { font-weight: 700; color: var(--white); font-size: 0.88rem; line-height: 1.3; }
+        .review-card .r-meta { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 6px 0 10px; }
+        .review-card .r-when { font-size: 0.7rem; color: var(--gray-dark); white-space: nowrap; }
+        .review-card .r-stars { color: var(--gold); font-size: 0.78rem; letter-spacing: 2px; }
+        .review-card .r-guide { display: inline-block; font-size: 8px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); background: rgba(201,145,42,0.12); border-radius: 3px; padding: 2px 6px; margin-left: 6px; white-space: nowrap; vertical-align: 1px; }
+        .review-card p { font-size: 0.86rem; color: #b8b8b8; line-height: 1.6; margin: 0; }
         .inline-img { margin: 2rem 0; border-radius: 10px; overflow: hidden; line-height: 0; }
         .inline-img img { width: 100%; height: auto; display: block; }
         .inline-img figcaption { line-height: 1.5; font-size: 0.78rem; color: var(--gray-dark); padding: 10px 2px 0; }
@@ -553,6 +568,32 @@
         <li>Prazo vencido no adesivo do para-brisa, ainda que a quilometragem não tenha chegado.</li>
     </ul>
     <p>Passar do prazo não estraga o motor de um dia para o outro, mas acelera um desgaste irreversível &mdash; conta que só aparece anos depois, muito mais cara. É o item mais barato da <a href="/blog/manutencao-preventiva">manutenção preventiva</a> e o que mais protege o motor.</p>
+
+        <h2>O que dizem os clientes</h2>
+    <p>Troca de óleo é serviço de repetição: o que decide não é a primeira visita, é voltar. Estas avaliações do Google são de clientes que voltaram.</p>
+    <div class="reviews-head">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <strong>5,0</strong> <span>no Google</span>
+        <span>&middot;</span>
+        <a href="https://www.google.com/search?q=Gold+Car+Mec%C3%A2nica" target="_blank" rel="noopener">Ver todas as avaliações no Google</a>
+    </div>
+    <div class="reviews-grid">
+        <div class="review-card">
+            <div class="r-name">Lucas Rodrigo</div>
+            <div class="r-meta"><span class="r-stars" aria-label="5 de 5 estrelas">★★★★★</span><span class="r-when">um ano atrás</span></div>
+            <p>Atendimento excelente, mecânicos gente boa e prestativos, todas as vezes que precisei dos serviços resolveram de forma bem rápida!!</p>
+        </div>
+        <div class="review-card">
+            <div class="r-name">Raphael Lucena</div>
+            <div class="r-meta"><span class="r-stars" aria-label="5 de 5 estrelas">★★★★★</span><span class="r-when">10 meses atrás</span></div>
+            <p>O pessoal da Gold Car me ajudou muito com o meu carro, o problema foi resolvido e entregue na data combinada. Eles me informaram cada passo e o motivo que as peças precisavam ser trocadas, raramente fazem isso em outros lugares! Super indico.</p>
+        </div>
+        <div class="review-card">
+            <div class="r-name">Marlos<span class="r-guide">Local Guide</span></div>
+            <div class="r-meta"><span class="r-stars" aria-label="5 de 5 estrelas">★★★★★</span><span class="r-when">2 meses atrás</span></div>
+            <p>Excelente atendimento! É difícil encontrar uma oficina de confiança hoje em dia, mas aqui o serviço foi honesto e muito bem executado. Irei recomendar sem dúvidas.</p>
+        </div>
+    </div>
 
     <h2>As duas unidades</h2>
     <div class="unit-card">
