@@ -2051,24 +2051,117 @@
     </style>
     <!-- Local SEO Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@type": "AutoRepair",
-      "name": "Gold Car Mecânica, Auto Elétrica & Motores",
+      "@type": "Organization",
+      "@id": "https://www.goldcaroficina.com.br/#organizacao",
+      "name": "Gold Car Mecânica & Auto Elétrica",
       "alternateName": "Gold Car Mecânica",
-      "description": "Oficina de mecânica, auto elétrica e turbina em São Paulo (Vila Lageado). Diagnóstico computadorizado, mecânica geral, motor, suspensão, freios, revisão preventiva e manutenção de turbinas. Sistema leva e traz nos bairros do entorno.",
-      "image": [
-        "https://www.goldcaroficina.com.br/fotos/IMG_3845.webp",
-        "https://www.goldcaroficina.com.br/fotos/IMG_3849.webp",
-        "https://www.goldcaroficina.com.br/fotos/IMG_3785.webp"
-      ],
-      "logo": "https://www.goldcaroficina.com.br/assets/logo.png",
-      "@id": "https://www.goldcaroficina.com.br/",
       "url": "https://www.goldcaroficina.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/assets/logo.png"
+      },
+      "description": "Oficina de mecânica, auto elétrica e turbina em São Paulo (Vila Lageado). Diagnóstico computadorizado, mecânica geral, motor, suspensão, freios, revisão preventiva e manutenção de turbinas. Sistema leva e traz nos bairros do entorno.",
+      "sameAs": [
+        "https://www.instagram.com/goldcaroficina",
+        "https://www.facebook.com/goldcaroficina",
+        "https://www.youtube.com/@GoldCarMec%C3%A2nica"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços Gold Car Mecânica & Auto Elétrica",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mecânica Geral",
+              "description": "Manutenção completa para veículos nacionais e importados."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Motor",
+              "description": "Especialistas em diagnóstico, retífica e reparo de motor."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Auto Elétrica",
+              "description": "Diagnóstico e reparo elétrico, central, módulos e injeção."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Injeção Eletrônica",
+              "description": "Limpeza, calibração e reparo de sistemas de injeção."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Diagnóstico Computadorizado",
+              "description": "Leitura digital de falhas com scanner de última geração."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Suspensão e Freios",
+              "description": "Reparo de suspensão, amortecedores, freios e direção."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Revisão Preventiva",
+              "description": "Revisão completa para evitar problemas e prolongar a vida do veículo."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Turbina",
+              "description": "Manutenção, recuperação e troca de turbinas para veículos turbinados."
+            }
+          }
+        ]
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "name": "Sistema Leva e Traz",
+        "description": "Buscamos e entregamos o seu veículo em casa ou no trabalho, com segurança."
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "48",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "AutoRepair",
+      "@id": "https://www.goldcaroficina.com.br/#unidade-vila-lageado",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica & Auto Elétrica — Unidade Vila Lageado",
+      "branchOf": {
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
+      },
       "telephone": "+5511963970171",
-      "priceRange": "$$",
-      "currenciesAccepted": "BRL",
-      "paymentAccepted": "Cash, Credit Card, Debit Card, Pix",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Corifeu de Azevedo Marques, 2875",
@@ -2080,64 +2173,180 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": -23.564200,
-        "longitude": -46.743700
+        "latitude": -23.5642,
+        "longitude": -46.7437
       },
       "hasMap": "https://maps.app.goo.gl/hoQ78iUo4V5hE28b7",
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
           "opens": "09:00",
           "closes": "18:00"
         }
       ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "48",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "areaServed": [
-        { "@type": "Place", "name": "Rio Pequeno, São Paulo - SP" },
-        { "@type": "Place", "name": "Jardim Bonfiglioli, São Paulo - SP" },
-        { "@type": "Place", "name": "Jardim Ester, São Paulo - SP" },
-        { "@type": "Place", "name": "Raposo Tavares, São Paulo - SP" },
-        { "@type": "Place", "name": "Butantã, São Paulo - SP" },
-        { "@type": "Place", "name": "Cidade Universitária, São Paulo - SP" },
-        { "@type": "Place", "name": "Vila Indiana, São Paulo - SP" },
-        { "@type": "Place", "name": "Pinheiros, São Paulo - SP" },
-        { "@type": "Place", "name": "Jaguaré, São Paulo - SP" },
-        { "@type": "Place", "name": "Parque Continental, São Paulo - SP" },
-        { "@type": "Place", "name": "Presidente Altino, Osasco - SP" },
-        { "@type": "City", "name": "Osasco" }
+      "priceRange": "$$",
+      "currenciesAccepted": "BRL",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Pix",
+      "image": [
+        "https://www.goldcaroficina.com.br/fotos/IMG_3845.webp",
+        "https://www.goldcaroficina.com.br/fotos/IMG_3849.webp",
+        "https://www.goldcaroficina.com.br/fotos/IMG_3785.webp"
       ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Serviços Gold Car Mecânica",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mecânica Geral", "description": "Manutenção completa para veículos nacionais e importados." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Motor", "description": "Especialistas em diagnóstico, retífica e reparo de motor." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Auto Elétrica", "description": "Diagnóstico e reparo elétrico, central, módulos e injeção." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Injeção Eletrônica", "description": "Limpeza, calibração e reparo de sistemas de injeção." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diagnóstico Computadorizado", "description": "Leitura digital de falhas com scanner de última geração." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Suspensão e Freios", "description": "Reparo de suspensão, amortecedores, freios e direção." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Revisão Preventiva", "description": "Revisão completa para evitar problemas e prolongar a vida do veículo." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Turbina", "description": "Manutenção, recuperação e troca de turbinas para veículos turbinados." } }
-        ]
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Vila Lageado, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Butantã, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Rio Pequeno, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Jardim Bonfiglioli, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Jardim Ester, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Raposo Tavares, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Cidade Universitária, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Vila Indiana, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Pinheiros, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Jaguaré, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Parque Continental, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Presidente Altino, São Paulo - SP"
+        },
+        {
+          "@type": "City",
+          "name": "Osasco"
+        }
+      ]
+    },
+    {
+      "@type": "AutoRepair",
+      "@id": "https://www.goldcaroficina.com.br/#unidade-rio-pequeno",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica & Auto Elétrica — Unidade Rio Pequeno",
+      "branchOf": {
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
       },
-      "makesOffer": {
-        "@type": "Offer",
-        "name": "Sistema Leva e Traz",
-        "description": "Buscamos e entregamos o seu veículo em casa ou no trabalho, com segurança."
+      "url": "https://www.goldcaroficina.com.br/unidades/rio-pequeno/",
+      "telephone": "+5511963970171",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Profa. Ana Maria Lélis da Silva, 166",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "05361-010",
+        "addressCountry": "BR"
       },
-      "sameAs": [
-        "https://www.instagram.com/goldcaroficina",
-        "https://www.facebook.com/goldcaroficina",
-        "https://maps.app.goo.gl/hoQ78iUo4V5hE28b7"
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "priceRange": "$$",
+      "currenciesAccepted": "BRL",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Pix",
+      "image": "https://www.goldcaroficina.com.br/fotos/IMG_3845.webp",
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Vila Lageado, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Butantã, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Rio Pequeno, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Jardim Bonfiglioli, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Jardim Ester, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Raposo Tavares, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Cidade Universitária, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Vila Indiana, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Pinheiros, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Jaguaré, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Parque Continental, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Presidente Altino, São Paulo - SP"
+        },
+        {
+          "@type": "City",
+          "name": "Osasco"
+        }
       ]
     }
+  ]
+}
     </script>
 
     <!-- FAQ Schema (AEO / Rich Snippets) -->
@@ -2222,7 +2431,7 @@
     <header>
         <nav aria-label="Navegação Principal">
             <a href="#hero" class="logo" aria-label="Gold Car Mecânica - Voltar ao topo">
-                <img src="assets/logo.png" alt="Gold Car Mecânica, Auto Elétrica e Turbina" width="228" height="80">
+                <img src="assets/logo.png" alt="Gold Car Mecânica &amp; Auto Elétrica" width="228" height="80">
             </a>
 
             <ul class="nav-links" id="primary-nav">
@@ -2952,7 +3161,7 @@
         <div class="footer-grid">
             <div class="footer-col footer-brand">
                 <div class="footer-logo">
-                    <img src="assets/logo.png" alt="Gold Car Mecânica, Auto Elétrica e Turbina" width="180" height="90" loading="lazy" decoding="async">
+                    <img src="assets/logo.png" alt="Gold Car Mecânica &amp; Auto Elétrica" width="180" height="90" loading="lazy" decoding="async">
                 </div>
                 <p>Mecânica especializada na região da Av. Corifeu de Azevedo Marques. Tecnologia, transparência e atendimento de quem realmente entende do seu carro.</p>
             </div>
@@ -3006,7 +3215,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2026 Gold Car Mecânica, Auto Elétrica & Turbina. Todos os direitos reservados. · <a href="/politica-privacidade">Política de Privacidade</a></p>
+            <p>&copy; 2026 Gold Car Mecânica &amp; Auto Elétrica. Todos os direitos reservados. · <a href="/politica-privacidade">Política de Privacidade</a></p>
         </div>
     </footer>
 

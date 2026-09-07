@@ -39,14 +39,25 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://www.goldcaroficina.com.br/#organizacao",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica",
+      "url": "https://www.goldcaroficina.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/assets/logo.png"
+      }
+    },
+    {
       "@type": "AutoRepair",
-      "@id": "https://www.goldcaroficina.com.br/#oficina-rio-pequeno",
-      "name": "Gold Car Mecânica",
-      "alternateName": "Gold Car Mecânica — Unidade Rio Pequeno",
+      "@id": "https://www.goldcaroficina.com.br/#unidade-rio-pequeno",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica & Auto Elétrica — Unidade Rio Pequeno",
       "branchOf": {
-        "@id": "https://www.goldcaroficina.com.br/#oficina"
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
       },
-      "url": "https://www.goldcaroficina.com.br/servicos/",
+      "url": "https://www.goldcaroficina.com.br/unidades/rio-pequeno/",
       "telephone": "+5511963970171",
       "address": {
         "@type": "PostalAddress",
@@ -70,44 +81,10 @@
           "closes": "18:00"
         }
       ],
+      "priceRange": "$$",
+      "currenciesAccepted": "BRL",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Pix",
       "image": "https://www.goldcaroficina.com.br/fotos/IMG_3845.webp",
-      "logo": "https://www.goldcaroficina.com.br/assets/logo.png"
-    },
-    {
-      "@type": "AutoRepair",
-      "@id": "https://www.goldcaroficina.com.br/#oficina",
-      "name": "Gold Car Mecânica",
-      "url": "https://www.goldcaroficina.com.br/",
-      "telephone": "+5511963970171",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Av. Corifeu de Azevedo Marques, 2875",
-        "addressLocality": "São Paulo",
-        "addressRegion": "SP",
-        "postalCode": "05339-000",
-        "addressCountry": "BR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -23.5642,
-        "longitude": -46.7437
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-          ],
-          "opens": "09:00",
-          "closes": "18:00"
-        }
-      ],
-      "image": "https://www.goldcaroficina.com.br/fotos/IMG_3845.webp",
-      "logo": "https://www.goldcaroficina.com.br/assets/logo.png",
       "areaServed": [
         {
           "@type": "Place",
@@ -158,8 +135,104 @@
           "name": "Presidente Altino, São Paulo - SP"
         },
         {
+          "@type": "City",
+          "name": "Osasco"
+        }
+      ]
+    },
+    {
+      "@type": "AutoRepair",
+      "@id": "https://www.goldcaroficina.com.br/#unidade-vila-lageado",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica & Auto Elétrica — Unidade Vila Lageado",
+      "branchOf": {
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
+      },
+      "telephone": "+5511963970171",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Corifeu de Azevedo Marques, 2875",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "05339-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.5642,
+        "longitude": -46.7437
+      },
+      "hasMap": "https://maps.app.goo.gl/hoQ78iUo4V5hE28b7",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "priceRange": "$$",
+      "currenciesAccepted": "BRL",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Pix",
+      "image": "https://www.goldcaroficina.com.br/fotos/IMG_3845.webp",
+      "areaServed": [
+        {
           "@type": "Place",
-          "name": "Osasco, São Paulo - SP"
+          "name": "Vila Lageado, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Butantã, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Rio Pequeno, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Jardim Bonfiglioli, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Jardim Ester, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Raposo Tavares, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Cidade Universitária, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Vila Indiana, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Pinheiros, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Jaguaré, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Parque Continental, São Paulo - SP"
+        },
+        {
+          "@type": "Place",
+          "name": "Presidente Altino, São Paulo - SP"
+        },
+        {
+          "@type": "City",
+          "name": "Osasco"
         }
       ],
       "hasOfferCatalog": {

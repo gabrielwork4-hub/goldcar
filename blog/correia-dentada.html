@@ -29,35 +29,87 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script type="application/ld+json">
-    [
-      {
-        "@context":"https://schema.org",
-        "@type":"Article",
-        "headline":"Correia Dentada: O Que e, Para Que Serve e Por Que a Troca Não Pode Esperar",
-        "image":{"@type":"ImageObject","url":"https://www.goldcaroficina.com.br/fotos/correia-dentada.webp","width":900,"height":500},"datePublished":"2026-05-16T09:00:00-03:00",
-        "dateModified":"2026-05-16T09:00:00-03:00",
-        "author":{"@type":"Person","name":"João Vitor","jobTitle":"Mecânico Chefe / Proprietário","url":"https://www.goldcaroficina.com.br/blog/autor/joao-vitor","image":"https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp","description":"Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.","worksFor":{"@type":"AutoRepair","name":"Gold Car Mecânica","url":"https://www.goldcaroficina.com.br/"}},
-        "publisher":{"@type":"Organization","name":"Gold Car Mecânica","logo":{"@type":"ImageObject","url":"https://www.goldcaroficina.com.br/assets/logo.png"}},
-        "url":"https://www.goldcaroficina.com.br/blog/correia-dentada",
-        "description":"A correia dentada que arrebenta pode destruir o motor. Saiba quando trocar, quanto custa e por que não esperar. Gold Car Mecânica, Vila Lageado, São Paulo."
-      },
-      {
-        "@context":"https://schema.org",
-        "@type":"AutoRepair","@id":"https://www.goldcaroficina.com.br/",
-        "name":"Gold Car Mecânica",
-        "url":"https://www.goldcaroficina.com.br/",
-        "telephone":"+5511963970171",
-        "address":{"@type":"PostalAddress","streetAddress":"Av. Corifeu de Azevedo Marques, 2875","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"05339-000","addressCountry":"BR"},
-        "geo":{"@type":"GeoCoordinates","latitude":-23.5642,"longitude":-46.7437},
-        "openingHours":"Mo-Fr 09:00-18:00",
-        "priceRange":"$$"
-      },
-      {
-        "@context":"https://schema.org",
-        "@type":"FAQPage",
-        "mainEntity":[{"@type":"Question","name":"Como saber se a correia dentada do meu carro está próxima do prazo?","acceptedAnswer":{"@type":"Answer","text":"Verifique o manual do proprietario para o intervalo recomendado pelo fabricante. Se você não tem histórico de manutenção do carro, leve a uma oficina para inspeção visual."}},{"@type":"Question","name":"Correia dentada e o mesmo que correia do alternador?","acceptedAnswer":{"@type":"Answer","text":"Não. A correia dentada sincroniza o motor internamente. A correia do alternador (ou correia multirripas) fica do lado de fora e aciona o alternador, a bomba de direção e o compressor do ar-condicionado."}},{"@type":"Question","name":"Preciso trocar a bomba dagua junto com a correia dentada?","acceptedAnswer":{"@type":"Answer","text":"Se a bomba dagua e acionada pela correia dentada (o que ocorre em muitos veículos), o recomendado e troca-la junto. O custo de mao de obra para acessar a bomba nessa situação e o mesmo da correia."}},{"@type":"Question","name":"A Gold Car faz troca de correia dentada em quais marcas?","acceptedAnswer":{"@type":"Answer","text":"Atendemos as principais marcas: VW, Fiat, GM, Ford, Toyota, Honda, Hyundai, Renault, Peugeot e outras. Consulte pelo WhatsApp para confirmar seu modelo."}}]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.goldcaroficina.com.br/#organizacao",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica",
+      "url": "https://www.goldcaroficina.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/assets/logo.png"
       }
-    ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Correia Dentada: O Que e, Para Que Serve e Por Que a Troca Não Pode Esperar",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/fotos/correia-dentada.webp",
+        "width": 900,
+        "height": 500
+      },
+      "datePublished": "2026-05-16T09:00:00-03:00",
+      "dateModified": "2026-05-16T09:00:00-03:00",
+      "author": {
+        "@type": "Person",
+        "name": "João Vitor",
+        "jobTitle": "Mecânico Chefe / Proprietário",
+        "url": "https://www.goldcaroficina.com.br/blog/autor/joao-vitor",
+        "image": "https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp",
+        "description": "Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.",
+        "worksFor": {
+          "@id": "https://www.goldcaroficina.com.br/#organizacao"
+        }
+      },
+      "publisher": {
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
+      },
+      "url": "https://www.goldcaroficina.com.br/blog/correia-dentada",
+      "description": "A correia dentada que arrebenta pode destruir o motor. Saiba quando trocar, quanto custa e por que não esperar. Gold Car Mecânica, Vila Lageado, São Paulo."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Como saber se a correia dentada do meu carro está próxima do prazo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verifique o manual do proprietario para o intervalo recomendado pelo fabricante. Se você não tem histórico de manutenção do carro, leve a uma oficina para inspeção visual."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Correia dentada e o mesmo que correia do alternador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. A correia dentada sincroniza o motor internamente. A correia do alternador (ou correia multirripas) fica do lado de fora e aciona o alternador, a bomba de direção e o compressor do ar-condicionado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso trocar a bomba dagua junto com a correia dentada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se a bomba dagua e acionada pela correia dentada (o que ocorre em muitos veículos), o recomendado e troca-la junto. O custo de mao de obra para acessar a bomba nessa situação e o mesmo da correia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A Gold Car faz troca de correia dentada em quais marcas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atendemos as principais marcas: VW, Fiat, GM, Ford, Toyota, Honda, Hyundai, Renault, Peugeot e outras. Consulte pelo WhatsApp para confirmar seu modelo."
+          }
+        }
+      ]
+    }
+  ]
+}
     </script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.goldcaroficina.com.br/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.goldcaroficina.com.br/blog/"},{"@type":"ListItem","position":3,"name":"Correia Dentada: O Que e, Para Que Serve e Por Que a Troca Não Pode Esperar","item":"https://www.goldcaroficina.com.br/blog/correia-dentada"}]}
