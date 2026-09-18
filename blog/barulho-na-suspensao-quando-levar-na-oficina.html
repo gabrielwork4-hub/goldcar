@@ -29,42 +29,87 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Barulho na Suspensão Dianteira: O Que Significa e Quando Ir à Oficina",
-        "image": {"@type": "ImageObject", "url": "https://www.goldcaroficina.com.br/fotos/IMG_3785.webp", "width": 900, "height": 500},
-        "datePublished": "2026-05-28T11:00:00-03:00",
-        "dateModified": "2026-05-28T11:00:00-03:00",
-        "author": {"@type": "Person", "name": "João Vitor", "jobTitle": "Mecânico Chefe / Proprietário", "url": "https://www.goldcaroficina.com.br/blog/autor/joao-vitor", "image": "https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp", "description": "Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.", "worksFor": {"@type": "AutoRepair", "name": "Gold Car Mecânica", "url": "https://www.goldcaroficina.com.br/"}},
-        "publisher": {"@type": "Organization", "name": "Gold Car Mecânica", "logo": {"@type": "ImageObject", "url": "https://www.goldcaroficina.com.br/assets/logo.png"}},
-        "url": "https://www.goldcaroficina.com.br/blog/barulho-na-suspensao-quando-levar-na-oficina",
-        "description": "Barulho na suspensão dianteira ao passar em valetas ou curvas? Descubra o que cada tipo de ruído significa e quando é urgente ir à oficina."
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Gold Car Mecânica",
-        "url": "https://www.goldcaroficina.com.br",
-        "telephone": "+5511963970171",
-        "address": {"@type": "PostalAddress", "streetAddress": "Av. Corifeu de Azevedo Marques, 2875", "addressLocality": "São Paulo", "addressRegion": "SP", "postalCode": "05339-000", "addressCountry": "BR"},
-        "geo": {"@type": "GeoCoordinates", "latitude": -23.5642, "longitude": -46.7437},
-        "openingHours": "Mo-Fr 09:00-18:00",
-        "priceRange": "$$",
-        "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "48"}
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Barulho na suspensão dianteira ao passar em valeta é grave?", "acceptedAnswer": {"@type": "Answer", "text": "Depende do tipo de barulho. Um estalo seco ao passar em valeta geralmente indica bucha de bandeja desgastada — pode-se dirigir com cautela, mas deve ser verificado em breve. Se o barulho vier acompanhado de instabilidade na direção ou vibração intensa, vá à oficina imediatamente."}},
-          {"@type": "Question", "name": "Quanto custa trocar a bucha de suspensão?", "acceptedAnswer": {"@type": "Answer", "text": "A troca de buchas de bandeja em São Paulo costuma custar entre R$ 150 e R$ 350 por eixo, incluindo mão de obra. Após a troca é obrigatório fazer o alinhamento 3D, que garante que a geometria do veículo volte ao ponto correto."}},
-          {"@type": "Question", "name": "Barulho nos freios ao frear é perigoso?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, potencialmente. Um chiado ao frear indica pastilha de freio no limite ou disco com sulco. Um ronco ou batida ao frear pode indicar disco empenado ou problema no suporte da pinça. Ambos comprometem a eficiência de frenagem e devem ser verificados com urgência."}},
-          {"@type": "Question", "name": "Posso continuar dirigindo com barulho na suspensão?", "acceptedAnswer": {"@type": "Answer", "text": "Se o barulho é ocasional, apenas ao passar em buracos, e o carro dirige normalmente, você pode seguir por alguns dias. Se o barulho é constante, aparece em curvas ou vem com instabilidade na direção, vá à oficina sem demora. Ignorar pode transformar uma peça de R$ 200 em um reparo de R$ 2.000."}}
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.goldcaroficina.com.br/#organizacao",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica",
+      "url": "https://www.goldcaroficina.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/assets/logo.png"
       }
-    ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Barulho na Suspensão Dianteira: O Que Significa e Quando Ir à Oficina",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/fotos/IMG_3785.webp",
+        "width": 900,
+        "height": 500
+      },
+      "datePublished": "2026-05-28T11:00:00-03:00",
+      "dateModified": "2026-05-28T11:00:00-03:00",
+      "author": {
+        "@type": "Person",
+        "name": "João Vitor",
+        "jobTitle": "Mecânico Chefe / Proprietário",
+        "url": "https://www.goldcaroficina.com.br/blog/autor/joao-vitor",
+        "image": "https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp",
+        "description": "Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.",
+        "worksFor": {
+          "@id": "https://www.goldcaroficina.com.br/#organizacao"
+        }
+      },
+      "publisher": {
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
+      },
+      "url": "https://www.goldcaroficina.com.br/blog/barulho-na-suspensao-quando-levar-na-oficina",
+      "description": "Barulho na suspensão dianteira ao passar em valetas ou curvas? Descubra o que cada tipo de ruído significa e quando é urgente ir à oficina."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Barulho na suspensão dianteira ao passar em valeta é grave?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do tipo de barulho. Um estalo seco ao passar em valeta geralmente indica bucha de bandeja desgastada — pode-se dirigir com cautela, mas deve ser verificado em breve. Se o barulho vier acompanhado de instabilidade na direção ou vibração intensa, vá à oficina imediatamente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto custa trocar a bucha de suspensão?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A troca de buchas de bandeja em São Paulo costuma custar entre R$ 150 e R$ 350 por eixo, incluindo mão de obra. Após a troca é obrigatório fazer o alinhamento 3D, que garante que a geometria do veículo volte ao ponto correto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Barulho nos freios ao frear é perigoso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, potencialmente. Um chiado ao frear indica pastilha de freio no limite ou disco com sulco. Um ronco ou batida ao frear pode indicar disco empenado ou problema no suporte da pinça. Ambos comprometem a eficiência de frenagem e devem ser verificados com urgência."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso continuar dirigindo com barulho na suspensão?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se o barulho é ocasional, apenas ao passar em buracos, e o carro dirige normalmente, você pode seguir por alguns dias. Se o barulho é constante, aparece em curvas ou vem com instabilidade na direção, vá à oficina sem demora. Ignorar pode transformar uma peça de R$ 200 em um reparo de R$ 2.000."
+          }
+        }
+      ]
+    }
+  ]
+}
     </script>
     <script type="application/ld+json">
     {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.goldcaroficina.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.goldcaroficina.com.br/blog/"}, {"@type": "ListItem", "position": 3, "name": "Barulho na Suspensão Dianteira: O Que Significa e Quando Ir à Oficina", "item": "https://www.goldcaroficina.com.br/blog/barulho-na-suspensao-quando-levar-na-oficina"}]}
@@ -196,7 +241,8 @@
     <ul class="nav-links" id="primary-nav">
         <li><a href="/#diferenciais">Diferenciais</a></li>
         <li><a href="/#como-funciona">Processo</a></li>
-        <li><a href="/#servicos">Serviços</a></li>
+        <li><a href="/servicos/">Serviços</a></li>
+        <li><a href="/unidades/">Unidades</a></li>
         <li><a href="/#depoimentos">Depoimentos</a></li>
         <li><a href="/#contato">Contato</a></li>
         <li><a href="/blog/" class="active">Blog</a></li>
@@ -250,6 +296,8 @@
     <h2>Por Que Diagnosticar Pelo Barulho Importa</h2>
     <p>Suspensão e freios são sistemas de segurança ativa. Quando apresentam falha, o carro não para de andar imediatamente &mdash; mas a capacidade de controle diminui antes que você perceba. Um <a href="/blog/suspensao-do-carro">componente de suspensão</a> desgastado compromete a estabilidade em curvas e a resposta à direção. Um <a href="/blog/sistema-de-freios">sistema de freios</a> degradado aumenta a distância de parada.</p>
     <p>O barulho é o primeiro aviso. Identificar o tipo certo acelera o diagnóstico e evita que um reparo de R$&nbsp;200 se transforme em um de R$&nbsp;2.000.</p>
+
+    <p>Se você já identificou o barulho e quer resolver, a Gold Car atende suspensão e freios dentro da <a href="/servicos/mecanica-geral/">mecânica geral</a>, com orçamento aprovado antes da execução e nota fiscal em toda saída.</p>
 
     <h2>Tabela de Diagnóstico: Barulho x Causa x Urgência</h2>
 
@@ -377,7 +425,7 @@
         <p>Inspeção completa de suspensão e freios com o veículo no elevador. Atendemos Vila Lageado, Butantã, Av. Corifeu e região da Zona Oeste de São Paulo.</p>
         <div class="post-cta-actions">
             <a href="https://wa.me/5511963970171" class="post-cta-btn primary">Agendar pelo WhatsApp</a>
-            <a href="/#servicos" class="post-cta-btn outline">Ver todos os serviços</a>
+            <a href="/servicos/" class="post-cta-btn outline">Ver todos os serviços</a>
         </div>
     </div>
 </section>
@@ -405,8 +453,8 @@
 </section>
 
 <footer>
-    <p>&copy; 2026 Gold Car Mecânica &mdash; Vila Lageado, Butantã, São Paulo</p>
-    <p><a href="/">Início</a> &nbsp;|&nbsp; <a href="/#servicos">Serviços</a> &nbsp;|&nbsp; <a href="/blog/">Blog</a></p>
+    <p>&copy; 2026 Gold Car Mecânica &amp; Auto Elétrica &mdash; Vila Lageado e Rio Pequeno, São Paulo</p>
+    <p><a href="/">Início</a> &nbsp;|&nbsp; <a href="/servicos/">Serviços</a> &nbsp;|&nbsp; <a href="/unidades/">Unidades</a> &nbsp;|&nbsp; <a href="/blog/">Blog</a></p>
 </footer>
 
 <script>

@@ -29,35 +29,87 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script type="application/ld+json">
-    [
-      {
-        "@context":"https://schema.org",
-        "@type":"Article",
-        "headline":"Manutenção Preventiva: O Guia Completo para Evitar Surpresas nas Estradas",
-        "image":{"@type":"ImageObject","url":"https://www.goldcaroficina.com.br/fotos/IMG_3871.webp","width":900,"height":500},"datePublished":"2026-05-16T09:00:00-03:00",
-        "dateModified":"2026-05-16T09:00:00-03:00",
-        "author":{"@type":"Person","name":"João Vitor","jobTitle":"Mecânico Chefe / Proprietário","url":"https://www.goldcaroficina.com.br/blog/autor/joao-vitor","image":"https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp","description":"Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.","worksFor":{"@type":"AutoRepair","name":"Gold Car Mecânica","url":"https://www.goldcaroficina.com.br/"}},
-        "publisher":{"@type":"Organization","name":"Gold Car Mecânica","logo":{"@type":"ImageObject","url":"https://www.goldcaroficina.com.br/assets/logo.png"}},
-        "url":"https://www.goldcaroficina.com.br/blog/manutencao-preventiva",
-        "description":"Checklist completo de manutenção preventiva por quilometragem. O que verificar em cada intervalo para manter seu carro seguro. Gold Car Mecânica, São Paulo."
-      },
-      {
-        "@context":"https://schema.org",
-        "@type":"AutoRepair","@id":"https://www.goldcaroficina.com.br/",
-        "name":"Gold Car Mecânica",
-        "url":"https://www.goldcaroficina.com.br/",
-        "telephone":"+5511963970171",
-        "address":{"@type":"PostalAddress","streetAddress":"Av. Corifeu de Azevedo Marques, 2875","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"05339-000","addressCountry":"BR"},
-        "geo":{"@type":"GeoCoordinates","latitude":-23.5642,"longitude":-46.7437},
-        "openingHours":"Mo-Fr 09:00-18:00",
-        "priceRange":"$$"
-      },
-      {
-        "@context":"https://schema.org",
-        "@type":"FAQPage",
-        "mainEntity":[{"@type":"Question","name":"O que e mais importante na manutenção preventiva?","acceptedAnswer":{"@type":"Answer","text":"Os sistemas de segurança direta: freios, correia dentada e pneus. Depois vem os fluidos (óleo, arrefecimento) e a parte elétrica. Uma falha nesses sistemas e a que mais prejudica o motorista."}},{"@type":"Question","name":"Manutenção preventiva vale a pena para carros antigos?","acceptedAnswer":{"@type":"Answer","text":"Especialmente para carros antigos. Peças de veículos com mais km tendem a deteriorar com mais frequência. O custo da manutenção preventiva em carro antigo e sempre menor do que o de um reparo emergencial."}},{"@type":"Question","name":"A Gold Car monta plano de manutenção personalizado?","acceptedAnswer":{"@type":"Answer","text":"Sim. Avaliamos o histórico do veículo, o km atual e o perfil de uso do cliente para sugerir o calendario de manutenção ideal. Entre em contato pelo WhatsApp."}},{"@type":"Question","name":"Qual a oficina de confiança para manutenção preventiva em Vila Lageado?","acceptedAnswer":{"@type":"Answer","text":"A Gold Car Mecânica atende Vila Lageado, Butantã, Rio Pequeno e região ha mais de 10 anos. Somos especializados em manutenção preventiva, diagnóstico eletrônico, freios e turbina."}}]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.goldcaroficina.com.br/#organizacao",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica",
+      "url": "https://www.goldcaroficina.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/assets/logo.png"
       }
-    ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Manutenção Preventiva: O Guia Completo para Evitar Surpresas nas Estradas",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/fotos/IMG_3871.webp",
+        "width": 900,
+        "height": 500
+      },
+      "datePublished": "2026-05-16T09:00:00-03:00",
+      "dateModified": "2026-05-16T09:00:00-03:00",
+      "author": {
+        "@type": "Person",
+        "name": "João Vitor",
+        "jobTitle": "Mecânico Chefe / Proprietário",
+        "url": "https://www.goldcaroficina.com.br/blog/autor/joao-vitor",
+        "image": "https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp",
+        "description": "Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.",
+        "worksFor": {
+          "@id": "https://www.goldcaroficina.com.br/#organizacao"
+        }
+      },
+      "publisher": {
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
+      },
+      "url": "https://www.goldcaroficina.com.br/blog/manutencao-preventiva",
+      "description": "Checklist completo de manutenção preventiva por quilometragem. O que verificar em cada intervalo para manter seu carro seguro. Gold Car Mecânica, São Paulo."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que e mais importante na manutenção preventiva?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os sistemas de segurança direta: freios, correia dentada e pneus. Depois vem os fluidos (óleo, arrefecimento) e a parte elétrica. Uma falha nesses sistemas e a que mais prejudica o motorista."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Manutenção preventiva vale a pena para carros antigos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Especialmente para carros antigos. Peças de veículos com mais km tendem a deteriorar com mais frequência. O custo da manutenção preventiva em carro antigo e sempre menor do que o de um reparo emergencial."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A Gold Car monta plano de manutenção personalizado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Avaliamos o histórico do veículo, o km atual e o perfil de uso do cliente para sugerir o calendario de manutenção ideal. Entre em contato pelo WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a oficina de confiança para manutenção preventiva em Vila Lageado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Gold Car Mecânica atende Vila Lageado, Butantã, Rio Pequeno e região ha mais de 10 anos. Somos especializados em manutenção preventiva, diagnóstico eletrônico, freios e turbina."
+          }
+        }
+      ]
+    }
+  ]
+}
     </script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.goldcaroficina.com.br/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.goldcaroficina.com.br/blog/"},{"@type":"ListItem","position":3,"name":"Manutenção Preventiva: O Guia Completo para Evitar Surpresas nas Estradas","item":"https://www.goldcaroficina.com.br/blog/manutencao-preventiva"}]}
@@ -191,7 +243,8 @@
     <ul class="nav-links" id="primary-nav">
         <li><a href="/#diferenciais">Diferenciais</a></li>
         <li><a href="/#como-funciona">Processo</a></li>
-        <li><a href="/#servicos">Serviços</a></li>
+        <li><a href="/servicos/">Serviços</a></li>
+        <li><a href="/unidades/">Unidades</a></li>
         <li><a href="/#depoimentos">Depoimentos</a></li>
         <li><a href="/#contato">Contato</a></li>
         <li><a href="/blog/" class="active">Blog</a></li>
@@ -322,7 +375,7 @@
         <p>A Gold Car atende Vila Lageado, Butantã, Pinheiros, Rio Pequeno, Osasco e região com diagnóstico digital, transparência e sistema leva &amp; traz.</p>
         <div class="post-cta-actions">
             <a href="/#contato" class="post-cta-btn primary">Fale com um especialista</a>
-            <a href="/#servicos" class="post-cta-btn outline">Ver todos os serviços</a>
+            <a href="/servicos/" class="post-cta-btn outline">Ver todos os serviços</a>
         </div>
     </div>
 </section>
@@ -346,8 +399,8 @@
 </section>
 
 <footer>
-    <p>&copy; 2026 Gold Car Mecânica &mdash; Vila Lageado, Butantã, São Paulo</p>
-    <p><a href="/">Início</a> &nbsp;|&nbsp; <a href="/#servicos">Serviços</a> &nbsp;|&nbsp; <a href="/blog/">Blog</a></p>
+    <p>&copy; 2026 Gold Car Mecânica &amp; Auto Elétrica &mdash; Vila Lageado e Rio Pequeno, São Paulo</p>
+    <p><a href="/">Início</a> &nbsp;|&nbsp; <a href="/servicos/">Serviços</a> &nbsp;|&nbsp; <a href="/unidades/">Unidades</a> &nbsp;|&nbsp; <a href="/blog/">Blog</a></p>
 </footer>
 
 <script>
