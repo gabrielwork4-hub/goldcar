@@ -29,23 +29,41 @@
     <title>João Vitor - Mecânico Chefe | Gold Car Mecânica</title>
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context":"https://schema.org",
-      "@type":"Person",
-      "name":"João Vitor",
-      "jobTitle":"Mecânico Chefe / Proprietário",
-      "url":"https://www.goldcaroficina.com.br/blog/autor/joao-vitor",
-      "image":"https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp",
-      "description":"Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.",
-      "knowsAbout":["Mecânica automotiva","Motor","Injeção eletrônica","Turbinas","Diagnóstico computadorizado","Manutenção preventiva"],
-      "worksFor":{
-        "@type":"AutoRepair",
-        "name":"Gold Car Mecânica",
-        "url":"https://www.goldcaroficina.com.br/",
-        "telephone":"+5511963970171",
-        "address":{"@type":"PostalAddress","streetAddress":"Av. Corifeu de Azevedo Marques, 2875","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"}
+      "@type": "Organization",
+      "@id": "https://www.goldcaroficina.com.br/#organizacao",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica",
+      "url": "https://www.goldcaroficina.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/assets/logo.png"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "João Vitor",
+      "jobTitle": "Mecânico Chefe / Proprietário",
+      "url": "https://www.goldcaroficina.com.br/blog/autor/joao-vitor",
+      "image": "https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp",
+      "description": "Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.",
+      "knowsAbout": [
+        "Mecânica automotiva",
+        "Motor",
+        "Injeção eletrônica",
+        "Turbinas",
+        "Diagnóstico computadorizado",
+        "Manutenção preventiva"
+      ],
+      "worksFor": {
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
       }
     }
+  ]
+}
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -217,7 +235,7 @@
             <span class="post-card-cat">Região</span>
             <p class="post-card-title">Mecânica no Butantã: Serviços para a Zona Oeste</p>
         </a>
-        <a href="/blog/oficina-mecanica-vila-lageado" class="post-card">
+        <a href="/unidades/vila-lageado/" class="post-card">
             <span class="post-card-cat">Região</span>
             <p class="post-card-title">Oficina em Vila Lageado: Por Que a Região Confia na Gold Car</p>
         </a>
@@ -226,8 +244,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Gold Car Mecânica &mdash; Vila Lageado, São Paulo</p>
-        <p><a href="/">Início</a> &nbsp;|&nbsp; <a href="/blog/">Blog</a> &nbsp;|&nbsp; <a href="/#servicos">Serviços</a> &nbsp;|&nbsp; <a href="/#contato">Contato</a></p>
+        <p>&copy; 2026 Gold Car Mecânica &amp; Auto Elétrica &mdash; Vila Lageado e Rio Pequeno, São Paulo</p>
+        <p><a href="/">Início</a> &nbsp;|&nbsp; <a href="/blog/">Blog</a> &nbsp;|&nbsp; <a href="/servicos/">Serviços</a> &nbsp;|&nbsp; <a href="/unidades/">Unidades</a> &nbsp;|&nbsp; <a href="/#contato">Contato</a></p>
     </footer>
 </body>
 </html>

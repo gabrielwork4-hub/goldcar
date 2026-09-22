@@ -29,35 +29,87 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script type="application/ld+json">
-    [
-      {
-        "@context":"https://schema.org",
-        "@type":"Article",
-        "headline":"Diagnóstico Automotivo: Como o Scanner Eletrônico Detecta Problemas que o Olho Não Ve",
-        "image":{"@type":"ImageObject","url":"https://www.goldcaroficina.com.br/fotos/IMG_3862.webp","width":900,"height":500},"datePublished":"2026-05-16T09:00:00-03:00",
-        "dateModified":"2026-05-16T09:00:00-03:00",
-        "author":{"@type":"Person","name":"João Vitor","jobTitle":"Mecânico Chefe / Proprietário","url":"https://www.goldcaroficina.com.br/blog/autor/joao-vitor","image":"https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp","description":"Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.","worksFor":{"@type":"AutoRepair","name":"Gold Car Mecânica","url":"https://www.goldcaroficina.com.br/"}},
-        "publisher":{"@type":"Organization","name":"Gold Car Mecânica","logo":{"@type":"ImageObject","url":"https://www.goldcaroficina.com.br/assets/logo.png"}},
-        "url":"https://www.goldcaroficina.com.br/blog/diagnostico-automotivo",
-        "description":"O que e o diagnóstico automotivo eletrônico, o que o scanner OBD detecta e por que e indispensável. Gold Car usa Autel em Vila Lageado, Butantã, São Paulo."
-      },
-      {
-        "@context":"https://schema.org",
-        "@type":"AutoRepair","@id":"https://www.goldcaroficina.com.br/",
-        "name":"Gold Car Mecânica",
-        "url":"https://www.goldcaroficina.com.br/",
-        "telephone":"+5511963970171",
-        "address":{"@type":"PostalAddress","streetAddress":"Av. Corifeu de Azevedo Marques, 2875","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"05339-000","addressCountry":"BR"},
-        "geo":{"@type":"GeoCoordinates","latitude":-23.5642,"longitude":-46.7437},
-        "openingHours":"Mo-Fr 09:00-18:00",
-        "priceRange":"$$"
-      },
-      {
-        "@context":"https://schema.org",
-        "@type":"FAQPage",
-        "mainEntity":[{"@type":"Question","name":"Quanto custa o diagnóstico eletrônico na Gold Car?","acceptedAnswer":{"@type":"Answer","text":"Entre em contato pelo WhatsApp para saber o valor atual. O diagnóstico e cobrado como serviço separado e pode ser incluido na revisão preventiva."}},{"@type":"Question","name":"Qualquer mecânico consegue interpretar os códigos OBD?","acceptedAnswer":{"@type":"Answer","text":"Qualquer scanner le os códigos, mas a interpretação correta exige experiência. Um mesmo código pode ter várias causas &mdash; o diagnóstico preciso depende do profissional que analisa o contexto completo."}},{"@type":"Question","name":"O diagnóstico eletrônico detecta problemas mecânicos?","acceptedAnswer":{"@type":"Answer","text":"O scanner detecta principalmente falhas em sistemas eletrônicos e sensores. Problemas puramente mecânicos &mdash; como desgaste de peça metalica &mdash; podem não gerar código, e precisam de inspeção fisica."}},{"@type":"Question","name":"Vale a pena fazer diagnóstico em carro usado antes de comprar?","acceptedAnswer":{"@type":"Answer","text":"Sim, com certeza. O diagnóstico pode revelar falhas escondidas que não aparecem no teste drive mas que indicam problemas serios. Na Gold Car fazemos diagnóstico pre-compra."}}]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.goldcaroficina.com.br/#organizacao",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica",
+      "url": "https://www.goldcaroficina.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/assets/logo.png"
       }
-    ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Diagnóstico Automotivo: Como o Scanner Eletrônico Detecta Problemas que o Olho Não Ve",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/fotos/IMG_3862.webp",
+        "width": 900,
+        "height": 500
+      },
+      "datePublished": "2026-05-16T09:00:00-03:00",
+      "dateModified": "2026-05-16T09:00:00-03:00",
+      "author": {
+        "@type": "Person",
+        "name": "João Vitor",
+        "jobTitle": "Mecânico Chefe / Proprietário",
+        "url": "https://www.goldcaroficina.com.br/blog/autor/joao-vitor",
+        "image": "https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp",
+        "description": "Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.",
+        "worksFor": {
+          "@id": "https://www.goldcaroficina.com.br/#organizacao"
+        }
+      },
+      "publisher": {
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
+      },
+      "url": "https://www.goldcaroficina.com.br/blog/diagnostico-automotivo",
+      "description": "O que e o diagnóstico automotivo eletrônico, o que o scanner OBD detecta e por que e indispensável. Gold Car usa Autel em Vila Lageado, Butantã, São Paulo."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto custa o diagnóstico eletrônico na Gold Car?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entre em contato pelo WhatsApp para saber o valor atual. O diagnóstico e cobrado como serviço separado e pode ser incluido na revisão preventiva."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qualquer mecânico consegue interpretar os códigos OBD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Qualquer scanner le os códigos, mas a interpretação correta exige experiência. Um mesmo código pode ter várias causas &mdash; o diagnóstico preciso depende do profissional que analisa o contexto completo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O diagnóstico eletrônico detecta problemas mecânicos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O scanner detecta principalmente falhas em sistemas eletrônicos e sensores. Problemas puramente mecânicos &mdash; como desgaste de peça metalica &mdash; podem não gerar código, e precisam de inspeção fisica."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vale a pena fazer diagnóstico em carro usado antes de comprar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, com certeza. O diagnóstico pode revelar falhas escondidas que não aparecem no teste drive mas que indicam problemas serios. Na Gold Car fazemos diagnóstico pre-compra."
+          }
+        }
+      ]
+    }
+  ]
+}
     </script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.goldcaroficina.com.br/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.goldcaroficina.com.br/blog/"},{"@type":"ListItem","position":3,"name":"Diagnóstico Automotivo: Como o Scanner Eletrônico Detecta Problemas que o Olho Não Ve","item":"https://www.goldcaroficina.com.br/blog/diagnostico-automotivo"}]}
@@ -191,7 +243,8 @@
     <ul class="nav-links" id="primary-nav">
         <li><a href="/#diferenciais">Diferenciais</a></li>
         <li><a href="/#como-funciona">Processo</a></li>
-        <li><a href="/#servicos">Serviços</a></li>
+        <li><a href="/servicos/">Serviços</a></li>
+        <li><a href="/unidades/">Unidades</a></li>
         <li><a href="/#depoimentos">Depoimentos</a></li>
         <li><a href="/#contato">Contato</a></li>
         <li><a href="/blog/" class="active">Blog</a></li>
@@ -267,7 +320,7 @@
     <p>Sempre que uma luz de alerta acender no painel. Também e recomendado em compras de carros usados (para detectar falhas escondidas) e como parte da revisão preventiva anual. Não ignore as luzes do painel &mdash; na Gold Car, o scanner eletrônico e parte do processo desde o início.</p>
 
     <div class="cta-box">
-        <p>Precisa desse serviço em <strong><a href="/blog/oficina-mecanica-vila-lageado">Vila Lageado</a> ou Butantã</strong>? A Gold Car faz o diagnóstico e passa o orçamento sem enrolação.</p>
+        <p>Precisa desse serviço em <strong><a href="/unidades/vila-lageado/">Vila Lageado</a> ou Butantã</strong>? A Gold Car faz o diagnóstico e passa o orçamento sem enrolação.</p>
         <a href="https://wa.me/5511963970171" class="btn-gold">Chamar no WhatsApp</a>
     </div>
 </article>
@@ -299,7 +352,7 @@
         <p>A Gold Car atende Vila Lageado, Butantã, Pinheiros, Rio Pequeno, Osasco e região com diagnóstico digital, transparência e sistema leva &amp; traz.</p>
         <div class="post-cta-actions">
             <a href="/#contato" class="post-cta-btn primary">Fale com um especialista</a>
-            <a href="/#servicos" class="post-cta-btn outline">Ver todos os serviços</a>
+            <a href="/servicos/" class="post-cta-btn outline">Ver todos os serviços</a>
         </div>
     </div>
 </section>
@@ -323,8 +376,8 @@
 </section>
 
 <footer>
-    <p>&copy; 2026 Gold Car Mecânica &mdash; Vila Lageado, Butantã, São Paulo</p>
-    <p><a href="/">Início</a> &nbsp;|&nbsp; <a href="/#servicos">Serviços</a> &nbsp;|&nbsp; <a href="/blog/">Blog</a></p>
+    <p>&copy; 2026 Gold Car Mecânica &amp; Auto Elétrica &mdash; Vila Lageado e Rio Pequeno, São Paulo</p>
+    <p><a href="/">Início</a> &nbsp;|&nbsp; <a href="/servicos/">Serviços</a> &nbsp;|&nbsp; <a href="/unidades/">Unidades</a> &nbsp;|&nbsp; <a href="/blog/">Blog</a></p>
 </footer>
 
 <script>

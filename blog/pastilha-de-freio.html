@@ -29,35 +29,87 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script type="application/ld+json">
-    [
-      {
-        "@context":"https://schema.org",
-        "@type":"Article",
-        "headline":"Pastilha de Freio: Como Saber a Hora de Trocar",
-        "image":{"@type":"ImageObject","url":"https://www.goldcaroficina.com.br/fotos/pastilha-de-freio.webp","width":900,"height":500},"datePublished":"2026-05-16T09:00:00-03:00",
-        "dateModified":"2026-06-11T09:00:00-03:00",
-        "author":{"@type":"Person","name":"João Vitor","jobTitle":"Mecânico Chefe / Proprietário","url":"https://www.goldcaroficina.com.br/blog/autor/joao-vitor","image":"https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp","description":"Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.","worksFor":{"@type":"AutoRepair","name":"Gold Car Mecânica","url":"https://www.goldcaroficina.com.br/"}},
-        "publisher":{"@type":"Organization","name":"Gold Car Mecânica","logo":{"@type":"ImageObject","url":"https://www.goldcaroficina.com.br/assets/logo.png"}},
-        "url":"https://www.goldcaroficina.com.br/blog/pastilha-de-freio",
-        "description":"Aprenda os 5 sinais de desgaste da pastilha de freio e quando a troca não pode esperar. Guia técnico da Gold Car Mecânica, oficina especializada em Vila Lageado, São Paulo."
-      },
-      {
-        "@context":"https://schema.org",
-        "@type":"AutoRepair","@id":"https://www.goldcaroficina.com.br/",
-        "name":"Gold Car Mecânica",
-        "url":"https://www.goldcaroficina.com.br/",
-        "telephone":"+5511963970171",
-        "address":{"@type":"PostalAddress","streetAddress":"Av. Corifeu de Azevedo Marques, 2875","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"05339-000","addressCountry":"BR"},
-        "geo":{"@type":"GeoCoordinates","latitude":-23.5642,"longitude":-46.7437},
-        "openingHours":"Mo-Fr 09:00-18:00",
-        "priceRange":"$$"
-      },
-      {
-        "@context":"https://schema.org",
-        "@type":"FAQPage",
-        "mainEntity":[{"@type":"Question","name":"Com que frequência devo trocar a pastilha de freio?","acceptedAnswer":{"@type":"Answer","text":"Em média a cada 30.000 a 50.000 km, mas o intervalo varia com o estilo de condução. Quem dirige muito em cidade, com muitas paradas, desgasta mais rápido."}},{"@type":"Question","name":"Posso trocar só a pastilha dianteira e deixar a traseira?","acceptedAnswer":{"@type":"Answer","text":"Não é recomendado. O desgaste costuma ser assimétrico entre dianteiro e traseiro, e deixar uma pastilha gasta compromete o equilíbrio de frenagem."}},{"@type":"Question","name":"Qual a diferença entre pastilha e lona de freio?","acceptedAnswer":{"@type":"Answer","text":"Pastilha é usada em freios a disco (mais comuns nas rodas dianteiras). Lona é usada em freios a tambor, geralmente nas traseiras de carros mais simples."}},{"@type":"Question","name":"A Gold Car realiza troca de pastilha em quais regiões?","acceptedAnswer":{"@type":"Answer","text":"Atendemos principalmente Vila Lageado, Butantã, Rio Pequeno e região do Km 23 em São Paulo. Fazemos leva e traz para clientes da região."}}]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.goldcaroficina.com.br/#organizacao",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica",
+      "url": "https://www.goldcaroficina.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/assets/logo.png"
       }
-    ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Pastilha de Freio: Como Saber a Hora de Trocar",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/fotos/pastilha-de-freio.webp",
+        "width": 900,
+        "height": 500
+      },
+      "datePublished": "2026-05-16T09:00:00-03:00",
+      "dateModified": "2026-06-11T09:00:00-03:00",
+      "author": {
+        "@type": "Person",
+        "name": "João Vitor",
+        "jobTitle": "Mecânico Chefe / Proprietário",
+        "url": "https://www.goldcaroficina.com.br/blog/autor/joao-vitor",
+        "image": "https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp",
+        "description": "Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.",
+        "worksFor": {
+          "@id": "https://www.goldcaroficina.com.br/#organizacao"
+        }
+      },
+      "publisher": {
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
+      },
+      "url": "https://www.goldcaroficina.com.br/blog/pastilha-de-freio",
+      "description": "Aprenda os 5 sinais de desgaste da pastilha de freio e quando a troca não pode esperar. Guia técnico da Gold Car Mecânica, oficina especializada em Vila Lageado, São Paulo."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Com que frequência devo trocar a pastilha de freio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Em média a cada 30.000 a 50.000 km, mas o intervalo varia com o estilo de condução. Quem dirige muito em cidade, com muitas paradas, desgasta mais rápido."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso trocar só a pastilha dianteira e deixar a traseira?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não é recomendado. O desgaste costuma ser assimétrico entre dianteiro e traseiro, e deixar uma pastilha gasta compromete o equilíbrio de frenagem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre pastilha e lona de freio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pastilha é usada em freios a disco (mais comuns nas rodas dianteiras). Lona é usada em freios a tambor, geralmente nas traseiras de carros mais simples."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A Gold Car realiza troca de pastilha em quais regiões?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atendemos principalmente Vila Lageado, Butantã, Rio Pequeno e região do Km 23 em São Paulo. Fazemos leva e traz para clientes da região."
+          }
+        }
+      ]
+    }
+  ]
+}
     </script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.goldcaroficina.com.br/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.goldcaroficina.com.br/blog/"},{"@type":"ListItem","position":3,"name":"Pastilha de Freio: Como Saber a Hora de Trocar","item":"https://www.goldcaroficina.com.br/blog/pastilha-de-freio"}]}
@@ -198,7 +250,8 @@
     <ul class="nav-links" id="primary-nav">
         <li><a href="/#diferenciais">Diferenciais</a></li>
         <li><a href="/#como-funciona">Processo</a></li>
-        <li><a href="/#servicos">Serviços</a></li>
+        <li><a href="/servicos/">Serviços</a></li>
+        <li><a href="/unidades/">Unidades</a></li>
         <li><a href="/#depoimentos">Depoimentos</a></li>
         <li><a href="/#contato">Contato</a></li>
         <li><a href="/blog/" class="active">Blog</a></li>
@@ -284,7 +337,7 @@
     <p>A troca é um dos serviços mais simples e importantes que você pode fazer pelo seu carro. Se está em dúvida, manda mensagem &mdash; avaliamos e falamos com transparência o que precisa ser feito.</p>
 
     <div class="cta-box">
-        <p>Precisa desse serviço em <strong><a href="/blog/oficina-mecanica-vila-lageado">Vila Lageado</a> ou Butantã</strong>? A Gold Car faz o diagnóstico e passa o orçamento sem enrolação.</p>
+        <p>Precisa desse serviço em <strong><a href="/unidades/vila-lageado/">Vila Lageado</a> ou Butantã</strong>? A Gold Car faz o diagnóstico e passa o orçamento sem enrolação.</p>
         <a href="https://wa.me/5511963970171" class="btn-gold">Chamar no WhatsApp</a>
     </div>
 </article>
@@ -316,7 +369,7 @@
         <p>A Gold Car atende Vila Lageado, Butantã, Pinheiros, Rio Pequeno, Osasco e região com diagnóstico digital, transparência e sistema leva &amp; traz.</p>
         <div class="post-cta-actions">
             <a href="/#contato" class="post-cta-btn primary">Fale com um especialista</a>
-            <a href="/#servicos" class="post-cta-btn outline">Ver todos os serviços</a>
+            <a href="/servicos/" class="post-cta-btn outline">Ver todos os serviços</a>
         </div>
     </div>
 </section>
@@ -340,8 +393,8 @@
 </section>
 
 <footer>
-    <p>&copy; 2026 Gold Car Mecânica &mdash; Vila Lageado, Butantã, São Paulo</p>
-    <p><a href="/">Início</a> &nbsp;|&nbsp; <a href="/#servicos">Serviços</a> &nbsp;|&nbsp; <a href="/blog/">Blog</a></p>
+    <p>&copy; 2026 Gold Car Mecânica &amp; Auto Elétrica &mdash; Vila Lageado e Rio Pequeno, São Paulo</p>
+    <p><a href="/">Início</a> &nbsp;|&nbsp; <a href="/servicos/">Serviços</a> &nbsp;|&nbsp; <a href="/unidades/">Unidades</a> &nbsp;|&nbsp; <a href="/blog/">Blog</a></p>
 </footer>
 
 <script>

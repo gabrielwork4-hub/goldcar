@@ -29,42 +29,87 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Luz de Injeção Acesa: O Que Fazer Antes de Ir à Oficina",
-        "image": {"@type": "ImageObject", "url": "https://www.goldcaroficina.com.br/fotos/IMG_3862.webp", "width": 900, "height": 500},
-        "datePublished": "2026-05-28T09:00:00-03:00",
-        "dateModified": "2026-05-28T09:00:00-03:00",
-        "author": {"@type": "Person", "name": "João Vitor", "jobTitle": "Mecânico Chefe / Proprietário", "url": "https://www.goldcaroficina.com.br/blog/autor/joao-vitor", "image": "https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp", "description": "Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.", "worksFor": {"@type": "AutoRepair", "name": "Gold Car Mecânica", "url": "https://www.goldcaroficina.com.br/"}},
-        "publisher": {"@type": "Organization", "name": "Gold Car Mecânica", "logo": {"@type": "ImageObject", "url": "https://www.goldcaroficina.com.br/assets/logo.png"}},
-        "url": "https://www.goldcaroficina.com.br/blog/luz-da-injecao-acesa-o-que-fazer",
-        "description": "Luz de injeção acesa no painel? Entenda as causas, se pode continuar dirigindo e quando ir à oficina. Diagnóstico via scanner profissional na Vila Lageado, São Paulo."
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Gold Car Mecânica",
-        "url": "https://www.goldcaroficina.com.br",
-        "telephone": "+5511963970171",
-        "address": {"@type": "PostalAddress", "streetAddress": "Av. Corifeu de Azevedo Marques, 2875", "addressLocality": "São Paulo", "addressRegion": "SP", "postalCode": "05339-000", "addressCountry": "BR"},
-        "geo": {"@type": "GeoCoordinates", "latitude": -23.5642, "longitude": -46.7437},
-        "openingHours": "Mo-Fr 09:00-18:00",
-        "priceRange": "$$",
-        "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "48"}
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Posso continuar dirigindo com a luz de injeção acesa?", "acceptedAnswer": {"@type": "Answer", "text": "Depende do comportamento do carro. Se ele está dirigindo normalmente, sem perda de potência, falhas ou barulhos, você pode seguir com cautela e agendar o diagnóstico em até 7 dias. Se a luz estiver piscando, o motor falhando ou houver fumaça, pare imediatamente e chame um mecânico."}},
-          {"@type": "Question", "name": "A luz de injeção acesa reprova no laudo do DETRAN?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Qualquer luz de advertência acesa no painel reprova a vistoria do DETRAN. É necessário identificar e corrigir a falha antes da inspeção veicular."}},
-          {"@type": "Question", "name": "Qual a diferença entre o leitor OBD2 e o scanner profissional?", "acceptedAnswer": {"@type": "Answer", "text": "O leitor OBD2 simples lê o código de erro, mas não indica a causa raiz. Um mesmo código pode ter 5 ou 6 causas diferentes. O scanner profissional, como o Autel que utilizamos na Gold Car, lê os dados ao vivo do motor e permite que o mecânico identifique exatamente qual componente está falhando, sem achismo."}},
-          {"@type": "Question", "name": "Quanto custa resolver a luz de injeção acesa?", "acceptedAnswer": {"@type": "Answer", "text": "O custo depende da causa. Falhas simples como uma vela gasta ou a tampa do combustível mal fechada custam pouco. Problemas no catalisador, sensor de oxigênio ou bico injetor podem chegar a R$ 400-800. Por isso o diagnóstico correto é essencial antes de qualquer orçamento."}}
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.goldcaroficina.com.br/#organizacao",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica",
+      "url": "https://www.goldcaroficina.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/assets/logo.png"
       }
-    ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Luz de Injeção Acesa: O Que Fazer Antes de Ir à Oficina",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/fotos/IMG_3862.webp",
+        "width": 900,
+        "height": 500
+      },
+      "datePublished": "2026-05-28T09:00:00-03:00",
+      "dateModified": "2026-05-28T09:00:00-03:00",
+      "author": {
+        "@type": "Person",
+        "name": "João Vitor",
+        "jobTitle": "Mecânico Chefe / Proprietário",
+        "url": "https://www.goldcaroficina.com.br/blog/autor/joao-vitor",
+        "image": "https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp",
+        "description": "Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.",
+        "worksFor": {
+          "@id": "https://www.goldcaroficina.com.br/#organizacao"
+        }
+      },
+      "publisher": {
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
+      },
+      "url": "https://www.goldcaroficina.com.br/blog/luz-da-injecao-acesa-o-que-fazer",
+      "description": "Luz de injeção acesa no painel? Entenda as causas, se pode continuar dirigindo e quando ir à oficina. Diagnóstico via scanner profissional na Vila Lageado, São Paulo."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Posso continuar dirigindo com a luz de injeção acesa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do comportamento do carro. Se ele está dirigindo normalmente, sem perda de potência, falhas ou barulhos, você pode seguir com cautela e agendar o diagnóstico em até 7 dias. Se a luz estiver piscando, o motor falhando ou houver fumaça, pare imediatamente e chame um mecânico."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A luz de injeção acesa reprova no laudo do DETRAN?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Qualquer luz de advertência acesa no painel reprova a vistoria do DETRAN. É necessário identificar e corrigir a falha antes da inspeção veicular."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre o leitor OBD2 e o scanner profissional?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O leitor OBD2 simples lê o código de erro, mas não indica a causa raiz. Um mesmo código pode ter 5 ou 6 causas diferentes. O scanner profissional, como o Autel que utilizamos na Gold Car, lê os dados ao vivo do motor e permite que o mecânico identifique exatamente qual componente está falhando, sem achismo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto custa resolver a luz de injeção acesa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O custo depende da causa. Falhas simples como uma vela gasta ou a tampa do combustível mal fechada custam pouco. Problemas no catalisador, sensor de oxigênio ou bico injetor podem chegar a R$ 400-800. Por isso o diagnóstico correto é essencial antes de qualquer orçamento."
+          }
+        }
+      ]
+    }
+  ]
+}
     </script>
     <script type="application/ld+json">
     {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.goldcaroficina.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.goldcaroficina.com.br/blog/"}, {"@type": "ListItem", "position": 3, "name": "Luz de Injeção Acesa: O Que Fazer Antes de Ir à Oficina", "item": "https://www.goldcaroficina.com.br/blog/luz-da-injecao-acesa-o-que-fazer"}]}
@@ -201,7 +246,8 @@
     <ul class="nav-links" id="primary-nav">
         <li><a href="/#diferenciais">Diferenciais</a></li>
         <li><a href="/#como-funciona">Processo</a></li>
-        <li><a href="/#servicos">Serviços</a></li>
+        <li><a href="/servicos/">Serviços</a></li>
+        <li><a href="/unidades/">Unidades</a></li>
         <li><a href="/#depoimentos">Depoimentos</a></li>
         <li><a href="/#contato">Contato</a></li>
         <li><a href="/blog/" class="active">Blog</a></li>
@@ -265,6 +311,8 @@
         <li><strong>Luz acesa + fumaça ou cheiro de combustível:</strong> desligue o motor imediatamente.</li>
     </ul>
     <p>Motoristas que trafegam diariamente pela <strong>Av. Corifeu de Azevedo Marques</strong> ou pela região de Vila Lageado e Butantã podem passar pela Gold Car no mesmo dia &mdash; o diagnóstico é feito sem necessidade de agendamento prévio.</p>
+
+    <p>A leitura de código e o teste do sistema de carga são feitos na <a href="/servicos/auto-eletrica/">auto elétrica da Gold Car</a>; o restante da manutenção está na página de <a href="/servicos/mecanica-geral/">mecânica geral</a>.</p>
 
     <h2>As 7 Causas Mais Comuns da Luz de Injeção Acesa</h2>
 
@@ -363,7 +411,7 @@
         <p>Diagnóstico com scanner Autel profissional, relatório de falhas e orçamento sem enrolação. Atendemos Vila Lageado, Butantã, Av. Corifeu e região da Zona Oeste de São Paulo.</p>
         <div class="post-cta-actions">
             <a href="https://wa.me/5511963970171" class="post-cta-btn primary">Falar pelo WhatsApp</a>
-            <a href="/#servicos" class="post-cta-btn outline">Ver todos os serviços</a>
+            <a href="/servicos/" class="post-cta-btn outline">Ver todos os serviços</a>
         </div>
     </div>
 </section>
@@ -391,8 +439,8 @@
 </section>
 
 <footer>
-    <p>&copy; 2026 Gold Car Mecânica &mdash; Vila Lageado, Butantã, São Paulo</p>
-    <p><a href="/">Início</a> &nbsp;|&nbsp; <a href="/#servicos">Serviços</a> &nbsp;|&nbsp; <a href="/blog/">Blog</a></p>
+    <p>&copy; 2026 Gold Car Mecânica &amp; Auto Elétrica &mdash; Vila Lageado e Rio Pequeno, São Paulo</p>
+    <p><a href="/">Início</a> &nbsp;|&nbsp; <a href="/servicos/">Serviços</a> &nbsp;|&nbsp; <a href="/unidades/">Unidades</a> &nbsp;|&nbsp; <a href="/blog/">Blog</a></p>
 </footer>
 
 <script>
