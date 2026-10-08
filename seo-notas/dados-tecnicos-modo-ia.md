@@ -34,3 +34,9 @@ Estes trechos foram redigidos a partir de conhecimento geral de mecânica, não 
 - Luz da injeção: "luz da injeção, luz da ignição e luz vermelha" (cor âmbar do check engine, alertas vermelhos, imobilizador) e "acendeu e apagou sozinha".
 - Velas: tabela "como ler a vela" (cores do eletrodo e o que podem indicar).
 - Preços: removidos dos posts até o cliente confirmar. Ficou "sob orçamento".
+
+## Lote 2 (manutenção preventiva e correia dentada): pedem revisão do mecânico
+Respostas que variam por motor, redigidas de forma geral e que devem ser lidas por quem conhece os carros atendidos:
+- Correia: "lado certo de montagem", "marcas na correia", "guardar a correia para trocar depois", "correia gasta e consumo", "recall em qualquer oficina" e "arrebentou: dá para consertar?".
+- Manutenção preventiva: "uso severo", "carro com mais de 150 mil km", "6ª revisão" e a tabela por km (intervalos de fluido de freio e de pastilhas vêm dos posts já existentes e dos dados confirmados).
+- Preços: nenhum valor em reais foi mantido. Tudo "sob orçamento".
