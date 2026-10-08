@@ -40,3 +40,6 @@ desktop.ini
 *.log
 *.tmp
 node_modules/
+
+# Notas internas de SEO (nao publicas)
+seo-notas/
