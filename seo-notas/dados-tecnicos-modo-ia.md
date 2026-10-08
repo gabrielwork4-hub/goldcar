@@ -1,9 +1,10 @@
 # Dados técnicos coletados no Modo IA do Google (08/10/2026)
 
-> **STATUS: NÃO VALIDADO PELA OFICINA.**
-> Texto gerado pelo Modo IA do Google (a IA se apresentou como "profissional técnico da Gold Car",
-> mas não é validação real). Fontes citadas por ela: autopapo.com.br, sincodives.com.br, Instagram,
-> Facebook. Antes de publicar, um mecânico da Gold Car precisa confirmar cada número.
+> **STATUS: CONFIRMADO PELA GOLD CAR em 08/10/2026.**
+> Origem: texto gerado pelo Modo IA do Google (fontes citadas: autopapo.com.br, sincodives.com.br,
+> Instagram, Facebook), que não valia como validação por si só. Depois, o responsável pela Gold Car
+> confirmou na sessão de trabalho que os dados abaixo estão corretos (a pessoa que confirmou não
+> foi registrada nominalmente). Os posts foram atualizados com esses números.
 
 ## 1. Pastilhas de freio (post: pastilha-de-freio)
 - Dianteiras: 30.000 a 40.000 km. Desgastam mais rápido; o eixo dianteiro faz cerca de 70% da frenagem.
@@ -22,7 +23,7 @@
   entra no catalisador (alta temperatura) e causa superaquecimento, podendo danificar o catalisador
   em poucos minutos.
 
-## Pontos a confirmar / cuidado na redação
+## Cuidados de redação adotados nos posts
 - "Explode dentro do catalisador" é linguagem da IA; no texto usar "queima dentro do catalisador e superaquece".
 - "70% da frenagem na dianteira" é número aproximado; usar "a maior parte" se o mecânico não confirmar.
 - Faixa da platina diverge do post atual (60.000 km): decidir qual manter.
