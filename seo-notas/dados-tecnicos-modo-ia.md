@@ -28,3 +28,9 @@
 - "70% da frenagem na dianteira" é número aproximado; usar "a maior parte" se o mecânico não confirmar.
 - Faixa da platina diverge do post atual (60.000 km): decidir qual manter.
 - "Em poucos minutos" é forte; validar ou suavizar para "rapidamente".
+
+## Textos adicionados depois da confirmação (pedem revisão do mecânico)
+Estes trechos foram redigidos a partir de conhecimento geral de mecânica, não dos dados confirmados em 08/10/2026:
+- Luz da injeção: "luz da injeção, luz da ignição e luz vermelha" (cor âmbar do check engine, alertas vermelhos, imobilizador) e "acendeu e apagou sozinha".
+- Velas: tabela "como ler a vela" (cores do eletrodo e o que podem indicar).
+- Preços: removidos dos posts até o cliente confirmar. Ficou "sob orçamento".
