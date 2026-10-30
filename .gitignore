@@ -26,3 +26,6 @@ desktop.ini
 *.log
 *.tmp
 node_modules/
+
+# Cache local do Wrangler (nao versionar nem publicar)
+.wrangler/
