@@ -37,35 +37,95 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script type="application/ld+json">
-    [
-      {
-        "@context":"https://schema.org",
-        "@type":"Article",
-        "headline":"Quando Trocar a Pastilha de Freio: Dianteira e Traseira",
-        "image":{"@type":"ImageObject","url":"https://www.goldcaroficina.com.br/fotos/pastilha-de-freio.webp","width":900,"height":500},"datePublished":"2026-05-16T09:00:00-03:00",
-        "dateModified":"2026-10-08T09:00:00-03:00",
-        "author":{"@type":"Person","name":"João Vitor","jobTitle":"Mecânico Chefe / Proprietário","url":"https://www.goldcaroficina.com.br/blog/autor/joao-vitor","image":"https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp","description":"Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.","worksFor":{"@type":"AutoRepair","name":"Gold Car Mecânica","url":"https://www.goldcaroficina.com.br/"}},
-        "publisher":{"@type":"Organization","name":"Gold Car Mecânica","logo":{"@type":"ImageObject","url":"https://www.goldcaroficina.com.br/assets/logo.png"}},
-        "url":"https://www.goldcaroficina.com.br/blog/pastilha-de-freio",
-        "description":"Quando trocar a pastilha de freio: dianteira a cada 30 a 40 mil km e traseira de 50 a 60 mil. Veja os sinais de desgaste de cada eixo. Gold Car, Vila Lageado (SP)."
-      },
-      {
-        "@context":"https://schema.org",
-        "@type":"AutoRepair","@id":"https://www.goldcaroficina.com.br/",
-        "name":"Gold Car Mecânica",
-        "url":"https://www.goldcaroficina.com.br/",
-        "telephone":"+5511963970171",
-        "address":{"@type":"PostalAddress","streetAddress":"Av. Corifeu de Azevedo Marques, 2875","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"05339-000","addressCountry":"BR"},
-        "geo":{"@type":"GeoCoordinates","latitude":-23.5642,"longitude":-46.7437},
-        "openingHours":"Mo-Fr 09:00-18:00",
-        "priceRange":"$$"
-      },
-      {
-        "@context":"https://schema.org",
-        "@type":"FAQPage",
-        "mainEntity":[{"@type":"Question","name":"Quando trocar a pastilha de freio? Com quantos km?","acceptedAnswer":{"@type":"Answer","text":"A dianteira costuma durar de 30.000 a 40.000 km e a traseira, de 50.000 a 60.000 km. O intervalo varia com o estilo de condução: quem roda muito em cidade, com muitas paradas, desgasta mais rápido."}},{"@type":"Question","name":"Como saber se a pastilha de freio está gasta?","acceptedAnswer":{"@type":"Answer","text":"Os sinais mais comuns são rangido ao frear, vibração no pedal, carro puxando para um lado e pedal mais fundo. Com menos de 3 mm de material, a troca não pode esperar."}},{"@type":"Question","name":"A pastilha dianteira e a traseira desgastam juntas? Posso trocar só a dianteira?","acceptedAnswer":{"@type":"Answer","text":"Não desgastam juntas: a dianteira gasta primeiro. Pode ser que só ela precise ser trocada, mas as traseiras devem ser medidas na mesma ocasião. Troque sempre as duas pastilhas do mesmo eixo juntas, para a frenagem ficar equilibrada."}},{"@type":"Question","name":"Qual a diferença entre pastilha e lona de freio?","acceptedAnswer":{"@type":"Answer","text":"Pastilha é usada em freios a disco (mais comuns nas rodas dianteiras). Lona é usada em freios a tambor, geralmente nas traseiras de carros mais simples."}},{"@type":"Question","name":"A Gold Car realiza troca de pastilha em quais regiões?","acceptedAnswer":{"@type":"Answer","text":"Atendemos principalmente Vila Lageado, Butantã, Rio Pequeno e região do Km 23 em São Paulo. Fazemos leva e traz para clientes da região."}}]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.goldcaroficina.com.br/#organizacao",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica",
+      "url": "https://www.goldcaroficina.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/assets/logo.png"
       }
-    ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Quando Trocar a Pastilha de Freio: Dianteira e Traseira",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/fotos/pastilha-de-freio.webp",
+        "width": 900,
+        "height": 500
+      },
+      "datePublished": "2026-05-16T09:00:00-03:00",
+      "dateModified": "2026-10-08T09:00:00-03:00",
+      "author": {
+        "@type": "Person",
+        "name": "João Vitor",
+        "jobTitle": "Mecânico Chefe / Proprietário",
+        "url": "https://www.goldcaroficina.com.br/blog/autor/joao-vitor",
+        "image": "https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp",
+        "description": "Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.",
+        "worksFor": {
+          "@id": "https://www.goldcaroficina.com.br/#organizacao"
+        }
+      },
+      "publisher": {
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
+      },
+      "url": "https://www.goldcaroficina.com.br/blog/pastilha-de-freio",
+      "description": "Quando trocar a pastilha de freio: dianteira a cada 30 a 40 mil km e traseira de 50 a 60 mil. Veja os sinais de desgaste de cada eixo. Gold Car, Vila Lageado (SP)."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quando trocar a pastilha de freio? Com quantos km?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A dianteira costuma durar de 30.000 a 40.000 km e a traseira, de 50.000 a 60.000 km. O intervalo varia com o estilo de condução: quem roda muito em cidade, com muitas paradas, desgasta mais rápido."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como saber se a pastilha de freio está gasta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os sinais mais comuns são rangido ao frear, vibração no pedal, carro puxando para um lado e pedal mais fundo. Com menos de 3 mm de material, a troca não pode esperar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A pastilha dianteira e a traseira desgastam juntas? Posso trocar só a dianteira?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não desgastam juntas: a dianteira gasta primeiro. Pode ser que só ela precise ser trocada, mas as traseiras devem ser medidas na mesma ocasião. Troque sempre as duas pastilhas do mesmo eixo juntas, para a frenagem ficar equilibrada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre pastilha e lona de freio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pastilha é usada em freios a disco (mais comuns nas rodas dianteiras). Lona é usada em freios a tambor, geralmente nas traseiras de carros mais simples."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A Gold Car realiza troca de pastilha em quais regiões?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atendemos principalmente Vila Lageado, Butantã, Rio Pequeno e região do Km 23 em São Paulo. Fazemos leva e traz para clientes da região."
+          }
+        }
+      ]
+    }
+  ]
+}
     </script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.goldcaroficina.com.br/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.goldcaroficina.com.br/blog/"},{"@type":"ListItem","position":3,"name":"Quando Trocar a Pastilha de Freio: Dianteira e Traseira","item":"https://www.goldcaroficina.com.br/blog/pastilha-de-freio"}]}
