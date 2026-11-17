@@ -37,46 +37,119 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Luz da Injeção Acesa ou Piscando: O Que Fazer Antes de Ir à Oficina",
-        "image": {"@type": "ImageObject", "url": "https://www.goldcaroficina.com.br/fotos/IMG_3862.webp", "width": 900, "height": 500},
-        "datePublished": "2026-05-28T09:00:00-03:00",
-        "dateModified": "2026-10-08T09:00:00-03:00",
-        "author": {"@type": "Person", "name": "João Vitor", "jobTitle": "Mecânico Chefe / Proprietário", "url": "https://www.goldcaroficina.com.br/blog/autor/joao-vitor", "image": "https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp", "description": "Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.", "worksFor": {"@type": "AutoRepair", "name": "Gold Car Mecânica", "url": "https://www.goldcaroficina.com.br/"}},
-        "publisher": {"@type": "Organization", "name": "Gold Car Mecânica", "logo": {"@type": "ImageObject", "url": "https://www.goldcaroficina.com.br/assets/logo.png"}},
-        "url": "https://www.goldcaroficina.com.br/blog/luz-da-injecao-acesa-o-que-fazer",
-        "description": "Luz da injeção acesa ou piscando? Veja se pode andar, por quanto tempo, o que fazer e as 7 causas mais comuns. Diagnóstico com scanner na Vila Lageado, SP."
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "AutoRepair",
-        "@id": "https://www.goldcaroficina.com.br/",
-        "name": "Gold Car Mecânica",
-        "url": "https://www.goldcaroficina.com.br/",
-        "telephone": "+5511963970171",
-        "address": {"@type": "PostalAddress", "streetAddress": "Av. Corifeu de Azevedo Marques, 2875", "addressLocality": "São Paulo", "addressRegion": "SP", "postalCode": "05339-000", "addressCountry": "BR"},
-        "geo": {"@type": "GeoCoordinates", "latitude": -23.5642, "longitude": -46.7437},
-        "openingHours": "Mo-Fr 09:00-18:00",
-        "priceRange": "$$"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Posso continuar dirigindo com a luz de injeção acesa?", "acceptedAnswer": {"@type": "Answer", "text": "Depende do comportamento do carro. Se ele está dirigindo normalmente, sem perda de potência, falhas ou barulhos, você pode seguir com cautela e agendar o diagnóstico em até 7 dias. Se a luz estiver piscando, o motor falhando ou houver fumaça, pare imediatamente e chame um mecânico."}},
-          {"@type": "Question", "name": "A luz de injeção acesa reprova no laudo do DETRAN?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Qualquer luz de advertência acesa no painel reprova a vistoria do DETRAN. É necessário identificar e corrigir a falha antes da inspeção veicular."}},
-          {"@type": "Question", "name": "Qual a diferença entre o leitor OBD2 e o scanner profissional?", "acceptedAnswer": {"@type": "Answer", "text": "O leitor OBD2 simples lê o código de erro, mas não indica a causa raiz. Um mesmo código pode ter 5 ou 6 causas diferentes. O scanner profissional, como o Autel que utilizamos na Gold Car, lê os dados ao vivo do motor e permite que o mecânico identifique exatamente qual componente está falhando, sem achismo."}},
-          {"@type": "Question", "name": "Quanto custa resolver a luz de injeção acesa?", "acceptedAnswer": {"@type": "Answer", "text": "O custo depende da causa. Falhas simples como uma vela gasta ou a tampa do combustível mal fechada pesam pouco no orçamento. Problemas no catalisador, no sensor de oxigênio ou nos bicos injetores costumam custar mais. O valor é passado sob orçamento, depois do diagnóstico."}},
-          {"@type": "Question", "name": "Quanto tempo posso andar com a luz da injeção acesa?", "acceptedAnswer": {"@type": "Answer", "text": "Não existe uma quilometragem segura fixa. Com a luz fixa e o carro andando normal, o recomendado é fazer o diagnóstico em até 7 dias. Se o carro perder potência, falhar ou a luz piscar, pare assim que possível."}},
-          {"@type": "Question", "name": "O que significa a luz da injeção piscando?", "acceptedAnswer": {"@type": "Answer", "text": "Significa um erro de ignição grave e ativo (misfire): combustível não queimado vai para o escapamento e superaquece o catalisador, que pode ser danificado rapidamente, às vezes em poucos minutos. Pare o carro assim que possível e chame um mecânico."}},
-          {"@type": "Question", "name": "A luz da injeção acendeu e apagou sozinha. É grave?", "acceptedAnswer": {"@type": "Answer", "text": "Pode ser uma falha intermitente. O código fica gravado na memória da central mesmo com a luz apagada, então vale fazer a leitura com scanner profissional antes que o problema volte ou piore."}},
-          {"@type": "Question", "name": "O que fazer quando a luz da injeção acende?", "acceptedAnswer": {"@type": "Answer", "text": "Observe se o carro perdeu potência, falha ou solta fumaça. Confira a tampa do combustível e, se a luz continuar acesa com o carro normal, agende o diagnóstico em até 7 dias. Se estiver piscando, pare em local seguro e chame um mecânico."}}
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.goldcaroficina.com.br/#organizacao",
+      "name": "Gold Car Mecânica & Auto Elétrica",
+      "alternateName": "Gold Car Mecânica",
+      "url": "https://www.goldcaroficina.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/assets/logo.png"
       }
-    ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Luz da Injeção Acesa ou Piscando: O Que Fazer Antes de Ir à Oficina",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.goldcaroficina.com.br/fotos/IMG_3862.webp",
+        "width": 900,
+        "height": 500
+      },
+      "datePublished": "2026-05-28T09:00:00-03:00",
+      "dateModified": "2026-10-08T09:00:00-03:00",
+      "author": {
+        "@type": "Person",
+        "name": "João Vitor",
+        "jobTitle": "Mecânico Chefe / Proprietário",
+        "url": "https://www.goldcaroficina.com.br/blog/autor/joao-vitor",
+        "image": "https://www.goldcaroficina.com.br/assets/autor-joao-vitor.webp",
+        "description": "Mecânico Chefe e proprietário da Gold Car Mecânica. Especialista em motor, injeção eletrônica e turbinas, com mais de 10 anos de experiência em Vila Lageado, São Paulo.",
+        "worksFor": {
+          "@id": "https://www.goldcaroficina.com.br/#organizacao"
+        }
+      },
+      "publisher": {
+        "@id": "https://www.goldcaroficina.com.br/#organizacao"
+      },
+      "url": "https://www.goldcaroficina.com.br/blog/luz-da-injecao-acesa-o-que-fazer",
+      "description": "Luz da injeção acesa ou piscando? Veja se pode andar, por quanto tempo, o que fazer e as 7 causas mais comuns. Diagnóstico com scanner na Vila Lageado, SP."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Posso continuar dirigindo com a luz de injeção acesa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende do comportamento do carro. Se ele está dirigindo normalmente, sem perda de potência, falhas ou barulhos, você pode seguir com cautela e agendar o diagnóstico em até 7 dias. Se a luz estiver piscando, o motor falhando ou houver fumaça, pare imediatamente e chame um mecânico."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A luz de injeção acesa reprova no laudo do DETRAN?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Qualquer luz de advertência acesa no painel reprova a vistoria do DETRAN. É necessário identificar e corrigir a falha antes da inspeção veicular."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre o leitor OBD2 e o scanner profissional?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O leitor OBD2 simples lê o código de erro, mas não indica a causa raiz. Um mesmo código pode ter 5 ou 6 causas diferentes. O scanner profissional, como o Autel que utilizamos na Gold Car, lê os dados ao vivo do motor e permite que o mecânico identifique exatamente qual componente está falhando, sem achismo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto custa resolver a luz de injeção acesa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O custo depende da causa. Falhas simples como uma vela gasta ou a tampa do combustível mal fechada pesam pouco no orçamento. Problemas no catalisador, no sensor de oxigênio ou nos bicos injetores costumam custar mais. O valor é passado sob orçamento, depois do diagnóstico."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo posso andar com a luz da injeção acesa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não existe uma quilometragem segura fixa. Com a luz fixa e o carro andando normal, o recomendado é fazer o diagnóstico em até 7 dias. Se o carro perder potência, falhar ou a luz piscar, pare assim que possível."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que significa a luz da injeção piscando?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Significa um erro de ignição grave e ativo (misfire): combustível não queimado vai para o escapamento e superaquece o catalisador, que pode ser danificado rapidamente, às vezes em poucos minutos. Pare o carro assim que possível e chame um mecânico."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A luz da injeção acendeu e apagou sozinha. É grave?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pode ser uma falha intermitente. O código fica gravado na memória da central mesmo com a luz apagada, então vale fazer a leitura com scanner profissional antes que o problema volte ou piore."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que fazer quando a luz da injeção acende?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Observe se o carro perdeu potência, falha ou solta fumaça. Confira a tampa do combustível e, se a luz continuar acesa com o carro normal, agende o diagnóstico em até 7 dias. Se estiver piscando, pare em local seguro e chame um mecânico."
+          }
+        }
+      ]
+    }
+  ]
+}
     </script>
     <script type="application/ld+json">
     {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.goldcaroficina.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.goldcaroficina.com.br/blog/"}, {"@type": "ListItem", "position": 3, "name": "Luz da Injeção Acesa ou Piscando: O Que Fazer Antes de Ir à Oficina", "item": "https://www.goldcaroficina.com.br/blog/luz-da-injecao-acesa-o-que-fazer"}]}
