@@ -71,6 +71,12 @@
     </script>
 
     <style>
+        /* Fallback com metricas ajustadas ao Barlow Condensed: evita salto de layout (CLS) quando a fonte web substitui a fonte do sistema */
+        @font-face{font-family:'Barlow Condensed Fallback';src:local('Arial Bold'),local('Arial-BoldMT'),local('Helvetica Bold'),local('Roboto Bold');font-weight:600 800;size-adjust:68.5%}
+        @font-face{font-family:'DM Sans Fallback';src:local('Arial'),local('Helvetica'),local('Roboto');font-weight:400 500;size-adjust:103%}
+        @font-face{font-family:'DM Sans Fallback';src:local('Arial Bold'),local('Arial-BoldMT'),local('Helvetica Bold'),local('Roboto Bold');font-weight:600 700;size-adjust:101.5%}
+        /* Metadados empilhados no mobile: a quebra de linha deixa de depender da troca de fonte (CLS) */
+        @media(max-width:600px){.article-header .meta{flex-direction:column}}
         :root {
             --bg-dark: #0a0a0a;
             --bg-card: #111111;
@@ -83,8 +89,8 @@
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
-        body { font-family: 'DM Sans', sans-serif; background: var(--bg-dark); color: var(--white); overflow-x: hidden; line-height: 1.7; }
-        h1, h2, h3, h4 { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; }
+        body { font-family: 'DM Sans','DM Sans Fallback',sans-serif; background: var(--bg-dark); color: var(--white); overflow-x: hidden; line-height: 1.7; }
+        h1, h2, h3, h4 { font-family: 'Barlow Condensed','Barlow Condensed Fallback',sans-serif; text-transform: uppercase; }
         nav { position: fixed; top: 0; width: 100%; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 100; background: rgba(10,10,10,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(201,145,42,0.2); }
         .logo { display: inline-flex; align-items: center; text-decoration: none; }
         .logo img { height: 60px; width: auto; display: block; filter: drop-shadow(0 0 12px rgba(201,145,42,0.15)); }
@@ -151,7 +157,7 @@
         .related-card { background: var(--bg-card); border: 1px solid rgba(201,145,42,0.12); border-radius: 6px; padding: 16px; text-decoration: none; display: block; transition: border-color 0.2s; }
         .related-card:hover { border-color: rgba(201,145,42,0.35); }
         .related-card span { font-size: 10px; color: var(--gold); letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 6px; }
-        .related-card p { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: 1rem; color: var(--white); line-height: 1.2; }
+        .related-card p { font-family: 'Barlow Condensed','Barlow Condensed Fallback',sans-serif; text-transform: uppercase; font-size: 1rem; color: var(--white); line-height: 1.2; }
         /* FOOTER */
         footer { background: #060606; border-top: 1px solid rgba(201,145,42,0.1); padding: 32px 5%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
         footer p { font-size: 12px; color: #444; }
@@ -164,7 +170,7 @@
     
         .post-cta { margin: 56px auto 32px; max-width: 860px; padding: 0 5%; }
         .post-cta-inner { background: linear-gradient(135deg, rgba(201,145,42,0.12), rgba(201,145,42,0.04)); border: 1px solid rgba(201,145,42,0.3); border-radius: 16px; padding: 36px 32px; text-align: center; }
-        .post-cta-inner h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #f5f5f5; margin-bottom: 12px; }
+        .post-cta-inner h2 { font-family: 'Barlow Condensed','Barlow Condensed Fallback',sans-serif; font-size: 1.6rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #f5f5f5; margin-bottom: 12px; }
         .post-cta-inner p { color: #c8c8c8; font-size: 1rem; line-height: 1.65; max-width: 620px; margin: 0 auto 22px; }
         .post-cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
         .post-cta-btn { display: inline-flex; align-items: center; padding: 12px 22px; border-radius: 10px; font-weight: 700; font-size: 0.92rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
@@ -232,7 +238,7 @@
     </div>
 </div>
 <div class="hero-img">
-    <img src="../fotos/correia-dentada.webp" alt="Correia dentada e engrenagens do motor - quando trocar a correia dentada do carro" width="900" height="500" loading="eager" decoding="async">
+    <img src="../fotos/correia-dentada.webp" alt="Correia dentada e engrenagens do motor - quando trocar a correia dentada do carro" width="420" height="630" loading="eager" fetchpriority="high" decoding="async">
 </div>
 
 <div class="breadcrumb">
